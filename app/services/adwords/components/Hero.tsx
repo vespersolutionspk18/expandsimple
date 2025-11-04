@@ -14,9 +14,9 @@ Stop wasting money on clicks that don&apos;t convert. Our certified Google Ads s
       </div>
       <div className="rounded-3xl overflow-hidden relative w-full h-[600px]">
         <img
-          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2800&auto=format&fit=crop"
-          alt="Google AdWords campaign dashboard with performance metrics"
-          className="absolute inset-0 w-full h-full object-cover"
+          src="/assets/ gadshero.png"
+          alt="Google AdWords paid results vs organic results"
+          className="absolute inset-0 w-full h-full object-cover object-left"
         />
       </div>
     </div>

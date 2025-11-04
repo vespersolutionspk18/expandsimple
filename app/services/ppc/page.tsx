@@ -23,7 +23,7 @@ const ppcServices: ServiceItem[] = [
     imageAlt: 'Google Ads search campaign dashboard',
     priority: true,
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'local-services-ads',
@@ -34,7 +34,7 @@ const ppcServices: ServiceItem[] = [
     imageSrc: '/assets/verify.png',
     imageAlt: 'Google Local Services Ads with Google Verified badge',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'social-media-ads',
@@ -45,7 +45,7 @@ const ppcServices: ServiceItem[] = [
     imageSrc: '/assets/instads.jpg',
     imageAlt: 'Facebook and Instagram ad campaigns for contractors',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 85
+    imageQuality: 100
   }
 ]
 

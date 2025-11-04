@@ -56,7 +56,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           src={service.imageSrc}
           alt={service.imageAlt}
           fill
-          className="object-cover transition-transform duration-500 hover:scale-105"
+          className="object-cover object-left"
           sizes={service.imageSizes || "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw"}
           quality={service.imageQuality || 90}
           loading={lazyLoad && !priority ? 'lazy' : 'eager'}

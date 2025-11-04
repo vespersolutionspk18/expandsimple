@@ -14,9 +14,9 @@ Own the first page - organic and paid combined. Our integrated SEM strategies co
       </div>
       <div className="rounded-3xl overflow-hidden relative w-full h-[600px]">
         <img
-          src="https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?q=80&w=2800&auto=format&fit=crop"
-          alt="Search engine results page showing integrated SEM strategy"
-          className="absolute inset-0 w-full h-full object-cover"
+          src="/assets/semhero.webp"
+          alt="Search engine marketing paid vs organic results"
+          className="absolute inset-0 w-full h-full object-cover object-left"
         />
       </div>
     </div>

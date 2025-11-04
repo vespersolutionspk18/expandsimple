@@ -23,7 +23,7 @@ const brandingServices: ServiceItem[] = [
     imageAlt: 'Professional brand identity design with logo and style guide',
     priority: true,
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'vehicle-wraps',
@@ -34,7 +34,7 @@ const brandingServices: ServiceItem[] = [
     imageSrc: '/assets/vehiclewraps.webp',
     imageAlt: 'Professional vehicle wrap design for contractor trucks',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'brand-strategy',
@@ -45,7 +45,7 @@ const brandingServices: ServiceItem[] = [
     imageSrc: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop',
     imageAlt: 'Brand strategy and market positioning',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 85
+    imageQuality: 100
   }
 ]
 

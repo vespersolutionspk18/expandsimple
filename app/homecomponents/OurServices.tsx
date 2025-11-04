@@ -56,7 +56,7 @@ const OurServices = () => {
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
     },
     {
-      title: "Web Design & Development",
+      title: "Web Development",
       description: "High-performance websites that convert visitors.",
       icon: Monitor,
       href: "/services/web-design",
@@ -113,12 +113,12 @@ const OurServices = () => {
               <Link
                 key={index}
                 href={service.href}
-                className="flex flex-col items-start p-4 bg-white border border-stone-200 rounded-2xl hover:border-stone-300 hover:shadow-xl transition-all duration-300 group"
+                className="flex flex-col items-start p-3 bg-white border-[1.5px] border-stone-200 rounded-2xl hover:border-stone-300 hover:shadow-xl transition-all duration-300 group"
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
                 {/* Inset Image with rounded corners */}
-                <div className="relative w-full h-40 lg:h-44 xl:h-48 2xl:h-56 rounded-xl overflow-hidden mb-4">
+                <div className="relative w-full h-44 lg:h-48 xl:h-52 2xl:h-60 rounded overflow-hidden mb-3">
                   <Image
                     src={service.image}
                     alt={service.title}

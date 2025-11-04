@@ -23,7 +23,7 @@ const crmServices: ServiceItem[] = [
     imageAlt: 'Open source CRM implementation dashboard',
     priority: true,
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'custom-crm-workflows',
@@ -34,7 +34,7 @@ const crmServices: ServiceItem[] = [
     imageSrc: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2670&auto=format&fit=crop',
     imageAlt: 'Custom CRM workflow automation',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'crm-integrations',
@@ -45,7 +45,7 @@ const crmServices: ServiceItem[] = [
     imageSrc: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop',
     imageAlt: 'CRM integration with business systems',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 85
+    imageQuality: 100
   }
 ]
 

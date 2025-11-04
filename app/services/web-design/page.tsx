@@ -23,7 +23,7 @@ const webDesignServices: ServiceItem[] = [
     imageAlt: 'High-converting website design with strategic CTAs',
     priority: true,
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'service-area-pages',
@@ -34,7 +34,7 @@ const webDesignServices: ServiceItem[] = [
     imageSrc: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2670&auto=format&fit=crop',
     imageAlt: 'Map showing service areas with location-specific pages',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'portfolio-showcase',
@@ -45,7 +45,7 @@ const webDesignServices: ServiceItem[] = [
     imageSrc: '/assets/beforeafter.jpg',
     imageAlt: 'Before and after project gallery showcase',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 85
+    imageQuality: 100
   }
 ]
 

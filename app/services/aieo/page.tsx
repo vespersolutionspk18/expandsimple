@@ -23,7 +23,7 @@ const aieoServices: ServiceItem[] = [
     imageAlt: 'AI analyzing website content for optimization',
     priority: true,
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'voice-search-optimization',
@@ -34,7 +34,7 @@ const aieoServices: ServiceItem[] = [
     imageSrc: '/assets/voice.webp',
     imageAlt: 'Person using voice search on smart speaker',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'knowledge-graph-enhancement',
@@ -45,7 +45,7 @@ const aieoServices: ServiceItem[] = [
     imageSrc: '/assets/knowledge.png',
     imageAlt: 'Knowledge graph visualization showing entity connections',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 85
+    imageQuality: 100
   }
 ]
 

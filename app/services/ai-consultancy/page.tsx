@@ -23,7 +23,7 @@ const aiServices: ServiceItem[] = [
     imageAlt: 'AI chatbot providing 24/7 customer service',
     priority: true,
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'marketing-automation',
@@ -34,7 +34,7 @@ const aiServices: ServiceItem[] = [
     imageSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2670&auto=format&fit=crop',
     imageAlt: 'Marketing automation dashboard with workflows',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'ai-operations',
@@ -45,7 +45,7 @@ const aiServices: ServiceItem[] = [
     imageSrc: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop',
     imageAlt: 'AI-powered operational efficiency tools',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 85
+    imageQuality: 100
   }
 ]
 

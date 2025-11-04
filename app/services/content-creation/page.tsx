@@ -23,7 +23,7 @@ const contentServices: ServiceItem[] = [
     imageAlt: 'Professional blog writing and content marketing',
     priority: true,
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'video-production',
@@ -34,7 +34,7 @@ const contentServices: ServiceItem[] = [
     imageSrc: '/assets/videoediting.jpeg',
     imageAlt: 'Professional video production for contractors',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'photography',
@@ -45,7 +45,7 @@ const contentServices: ServiceItem[] = [
     imageSrc: '/assets/interiorphoto.jpg',
     imageAlt: 'Professional photography for contractors',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 85
+    imageQuality: 100
   }
 ]
 

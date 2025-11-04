@@ -23,7 +23,7 @@ const seoServices: ServiceItem[] = [
     imageAlt: 'Google Maps local search results showing top rankings',
     priority: true,
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'on-page-seo',
@@ -34,7 +34,7 @@ const seoServices: ServiceItem[] = [
     imageSrc: '/assets/technicalseo.png',
     imageAlt: 'Website speed and performance optimization dashboard',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'content-seo',
@@ -45,7 +45,7 @@ const seoServices: ServiceItem[] = [
     imageSrc: '/assets/backlinks.webp',
     imageAlt: 'Content marketing strategy session with SEO planning',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 85
+    imageQuality: 100
   }
 ]
 

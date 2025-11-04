@@ -14,16 +14,16 @@ import KeyFeatures from '@/app/components/KeyFeatures'
 
 const adwordsServices: ServiceItem[] = [
   {
-    id: 'project-based-campaigns',
-    title: 'Project-Based Campaign Optimization',
-    description: 'Specialized campaigns for high-value projects like kitchen remodels, bathroom renovations, and roof replacements. We target homeowners at the exact moment they\'re ready to hire, using keywords like "kitchen remodel cost [city]" and "bathroom renovation contractor near me". Strategic budget allocation ensures you win the projects that matter most.',
-    buttonText: 'Optimize Campaigns',
-    buttonHref: '/contact?service=project-campaigns',
-    imageSrc: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2670&auto=format&fit=crop',
-    imageAlt: 'Google AdWords campaign focused on remodeling projects',
+    id: 'campaign-management',
+    title: 'Full-Service Campaign Management',
+    description: 'Complete Google Ads management from setup to optimization. We handle keyword research, ad copywriting, bid management, A/B testing, and performance tracking. Get detailed dashboards showing clicks, impressions, costs, and conversions across all your campaigns. Weekly optimization ensures maximum ROI on every dollar spent.',
+    buttonText: 'Get Campaign Management',
+    buttonHref: '/contact?service=campaign-management',
+    imageSrc: '/assets/googleads1.webp',
+    imageAlt: 'Google AdWords campaign management dashboard',
     priority: true,
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'seasonal-campaigns',
@@ -31,10 +31,10 @@ const adwordsServices: ServiceItem[] = [
     description: 'Capitalize on seasonal demand with perfectly timed campaigns. Roofing campaigns in summer/fall when storms hit. Interior remodeling in winter when outdoor work slows. Exterior projects in spring when weather improves. We adjust bids, budgets, and messaging to match seasonal buying patterns in your market.',
     buttonText: 'Plan Seasonal Strategy',
     buttonHref: '/contact?service=seasonal-campaigns',
-    imageSrc: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2670&auto=format&fit=crop',
+    imageSrc: '/assets/seasonalads.png',
     imageAlt: 'Seasonal marketing calendar for contractors',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'quality-score-optimization',
@@ -42,10 +42,10 @@ const adwordsServices: ServiceItem[] = [
     description: 'Lower your cost-per-click by up to 50% through Quality Score optimization. We improve ad relevance, landing page experience, and expected click-through rate - the three factors Google uses to calculate Quality Score. Higher scores mean lower costs and better ad positions, giving you more leads for the same budget.',
     buttonText: 'Reduce Ad Costs',
     buttonHref: '/contact?service=quality-score',
-    imageSrc: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop',
-    imageAlt: 'Google Ads Quality Score optimization dashboard',
+    imageSrc: '/assets/adscost.png',
+    imageAlt: 'Google Ads cost optimization metrics',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 85
+    imageQuality: 100
   }
 ]
 

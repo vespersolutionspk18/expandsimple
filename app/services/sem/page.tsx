@@ -19,11 +19,11 @@ const semServices: ServiceItem[] = [
     description: 'Stop treating SEO and PPC as separate channels. Our integrated approach uses PPC data to inform SEO strategy and vice versa. We identify high-converting keywords through PPC, then build SEO content around them. Use SEO insights to refine PPC targeting. This synergy captures more market share while reducing overall customer acquisition costs.',
     buttonText: 'Get Integrated Strategy',
     buttonHref: '/contact?service=integrated-sem',
-    imageSrc: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop',
-    imageAlt: 'Integrated SEO and PPC strategy dashboard',
+    imageSrc: '/assets/sem1.png',
+    imageAlt: 'Keyword research and analysis dashboard',
     priority: true,
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'serp-domination',
@@ -31,10 +31,10 @@ const semServices: ServiceItem[] = [
     description: 'Own multiple positions on page one. We target featured snippets, local pack rankings, People Also Ask boxes, and video carousels in addition to traditional organic and paid listings. The more real estate you own on the search results page, the less visible your competitors become. Dominate the SERP, dominate your market.',
     buttonText: 'Dominate Search Results',
     buttonHref: '/contact?service=serp-domination',
-    imageSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2670&auto=format&fit=crop',
-    imageAlt: 'Google search results showing multiple SERP features',
+    imageSrc: '/assets/sem2.png',
+    imageAlt: 'SERP features and rich results',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 90
+    imageQuality: 100
   },
   {
     id: 'competitor-conquest',
@@ -42,10 +42,10 @@ const semServices: ServiceItem[] = [
     description: 'Capture customers researching your competitors. We bid on competitor brand names through PPC while creating comparison content for SEO. When homeowners search for "CompetitorName reviews" or "CompetitorName vs", they find you instead. Ethical, effective, and proven to steal market share from established competitors.',
     buttonText: 'Steal Market Share',
     buttonHref: '/contact?service=competitor-conquest',
-    imageSrc: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop',
-    imageAlt: 'Competitive analysis and market share strategy',
+    imageSrc: '/assets/sem3.png',
+    imageAlt: 'Competitor conquesting strategy diagram',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
-    imageQuality: 85
+    imageQuality: 100
   }
 ]
 
