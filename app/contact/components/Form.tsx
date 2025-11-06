@@ -29,9 +29,9 @@ const Form = () => {
   }
 
   return (
-    <div className="flex flex-row gap-0">
+    <div className="flex flex-col lg:flex-row gap-0">
       {/* Left Section with Image Background */}
-      <div className="relative w-[45%] p-7 flex flex-col justify-between rounded-3xl overflow-hidden">
+      <div className="relative w-full lg:w-[45%] p-6 md:p-7 flex flex-col justify-between rounded-t-3xl lg:rounded-l-3xl lg:rounded-tr-none overflow-hidden min-h-[300px] lg:min-h-0">
         <img
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
           alt="Team collaboration"
@@ -41,16 +41,18 @@ const Form = () => {
         
         <div className="relative z-10 flex flex-col h-full justify-between">
           <div>
-            <h1 className="text-white text-5xl tracking-tighter mb-4">
+            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl tracking-tighter mb-3 md:mb-4">
               Fill out our form<br />
               to get in touch
             </h1>
           </div>
-          
-          <div className="flex flex-col gap-6">
+
+          <div className="flex flex-col gap-4 md:gap-6">
             <div>
-              <p className="text-white/90 text-xl tracking-tighter">
-                Interesting in joining our team? Head over to our<br />
+              <p className="text-white/90 text-base md:text-lg lg:text-xl tracking-tighter">
+                Interesting in joining our team? Head over to our
+                <span className="hidden lg:inline"><br /></span>
+                <span className="lg:hidden"> </span>
                 Careers page to check our latest job vacancies.
               </p>
             </div>
@@ -64,10 +66,10 @@ const Form = () => {
       </div>
 
       {/* Right Section with Form */}
-      <div className="w-[55%] p-8 bg-white">
+      <div className="w-full lg:w-[55%] p-6 md:p-8 bg-white rounded-b-3xl lg:rounded-r-3xl lg:rounded-bl-none">
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Name Row */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label className="block text-black/85 text-sm mb-1 tracking-tight">
                 Hello, my first name is... <span className="text-red-500">*</span>
@@ -78,7 +80,7 @@ const Form = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="John"
-                className="w-full px-3 py-2 text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30"
+                className="w-full px-3 py-2.5 md:py-2 text-sm md:text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30"
                 required
               />
             </div>
@@ -92,7 +94,7 @@ const Form = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder="Doe"
-                className="w-full px-3 py-2 text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30"
+                className="w-full px-3 py-2.5 md:py-2 text-sm md:text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30"
                 required
               />
             </div>
@@ -109,13 +111,13 @@ const Form = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="john@coolbusiness.com"
-              className="w-full px-3 py-2 text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30"
+              className="w-full px-3 py-2.5 md:py-2 text-sm md:text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30"
               required
             />
           </div>
 
           {/* Job Title and Company Row */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label className="block text-black/85 text-sm mb-1 tracking-tight">
                 My job title is... <span className="text-red-500">*</span>
@@ -126,7 +128,7 @@ const Form = () => {
                 value={formData.jobTitle}
                 onChange={handleChange}
                 placeholder="Marketing Director"
-                className="w-full px-3 py-2 text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30"
+                className="w-full px-3 py-2.5 md:py-2 text-sm md:text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30"
                 required
               />
             </div>
@@ -140,7 +142,7 @@ const Form = () => {
                 value={formData.company}
                 onChange={handleChange}
                 placeholder="Some cool company"
-                className="w-full px-3 py-2 text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30"
+                className="w-full px-3 py-2.5 md:py-2 text-sm md:text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30"
                 required
               />
             </div>
@@ -155,7 +157,7 @@ const Form = () => {
               name="interest"
               value={formData.interest}
               onChange={handleChange}
-              className="w-full px-3 py-2 text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all appearance-none bg-white cursor-pointer"
+              className="w-full px-3 py-2.5 md:py-2 text-sm md:text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all appearance-none bg-white cursor-pointer"
               required
             >
               <option value="">Please select an option</option>
@@ -169,7 +171,7 @@ const Form = () => {
           </div>
 
           {/* Region and Source Row */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label className="block text-black/85 text-sm mb-1 tracking-tight">
                 Region <span className="text-red-500">*</span>
@@ -178,7 +180,7 @@ const Form = () => {
                 name="region"
                 value={formData.region}
                 onChange={handleChange}
-                className="w-full px-3 py-2 text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all appearance-none bg-white cursor-pointer"
+                className="w-full px-3 py-2.5 md:py-2 text-sm md:text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all appearance-none bg-white cursor-pointer"
                 required
               >
                 <option value="">Please select an option</option>
@@ -198,7 +200,7 @@ const Form = () => {
                 name="source"
                 value={formData.source}
                 onChange={handleChange}
-                className="w-full px-3 py-2 text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all appearance-none bg-white cursor-pointer"
+                className="w-full px-3 py-2.5 md:py-2 text-sm md:text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all appearance-none bg-white cursor-pointer"
                 required
               >
                 <option value="">Please select an option</option>
@@ -223,7 +225,7 @@ const Form = () => {
               onChange={handleChange}
               placeholder="Start typing here..."
               rows={5}
-              className="w-full px-3 py-2 text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30 resize-none"
+              className="w-full px-3 py-2.5 md:py-2 text-sm md:text-base border border-black/10 rounded-xl focus:border-black/80 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all placeholder:text-black/30 resize-none"
               required
             />
           </div>
@@ -232,10 +234,10 @@ const Form = () => {
           <div className="pt-2">
             <button
               type="submit"
-              className="w-full bg-black text-white py-3 px-6 rounded-full text-base font-medium hover:bg-black/90 transition-all flex items-center justify-center gap-2"
+              className="w-full bg-black text-white py-3 md:py-3 px-6 rounded-full text-sm md:text-base font-medium hover:bg-black/90 transition-all flex items-center justify-center gap-2"
             >
               Submit Form
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11l5-5m0 0l5 5m-5-5v12" transform="rotate(45 12 12)" />
               </svg>
             </button>

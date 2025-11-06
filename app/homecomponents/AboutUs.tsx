@@ -8,7 +8,7 @@ const AboutUs = () => {
                 Who We Are
             </h5>
             <h5>
-                Who We Are
+                About Us
             </h5>
 
         </div>

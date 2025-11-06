@@ -19,7 +19,7 @@ const aiServices: ServiceItem[] = [
     description: 'Never miss a lead because you can\'t answer after hours. AI chatbots handle common questions, qualify leads, collect contact information, and schedule appointments automatically - even at 11 PM on Sunday. Integrated with your website and Facebook Messenger. Homeowners get instant responses, you wake up to qualified appointments. The chatbot learns from your FAQs and provides accurate, helpful answers that sound natural, not robotic.',
     buttonText: 'Get AI Chatbot',
     buttonHref: '/contact?service=ai-chatbot',
-    imageSrc: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2670&auto=format&fit=crop',
+    imageSrc: '/assets/aichatbot.jpg',
     imageAlt: 'AI chatbot providing 24/7 customer service',
     priority: true,
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
@@ -31,7 +31,7 @@ const aiServices: ServiceItem[] = [
     description: 'Stop manually sending follow-up emails and review requests. AI-powered marketing automation handles personalized email campaigns, SMS follow-ups, review request sequences, and lead nurturing workflows. The system tracks customer behavior and sends the right message at the right time. Post-project, it automatically requests reviews. For estimates that didn\'t close, it sends periodic check-ins. For past customers, it promotes seasonal services. Set it once, generate leads forever.',
     buttonText: 'Automate Marketing',
     buttonHref: '/contact?service=marketing-automation',
-    imageSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2670&auto=format&fit=crop',
+    imageSrc: '/assets/aiautomation.webp',
     imageAlt: 'Marketing automation dashboard with workflows',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
     imageQuality: 100
@@ -42,7 +42,7 @@ const aiServices: ServiceItem[] = [
     description: 'AI optimizes operations beyond marketing. Route optimization ensures your crews take the most efficient paths, saving fuel and time. Predictive scheduling identifies ideal appointment times based on location and job type. Automated proposal generation creates professional estimates in minutes, not hours. Smart inventory management predicts material needs and automates reordering. These tools reduce administrative burden, improve margins, and let you focus on growing the business instead of managing logistics.',
     buttonText: 'Optimize Operations',
     buttonHref: '/contact?service=ai-operations',
-    imageSrc: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop',
+    imageSrc: '/assets/opeai.webp',
     imageAlt: 'AI-powered operational efficiency tools',
     imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
     imageQuality: 100

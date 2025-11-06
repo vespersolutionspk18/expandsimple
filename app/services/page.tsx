@@ -16,9 +16,11 @@ const ServicesPage = () => {
       description: 'Dominate local search results and get found by homeowners actively searching for your services. Our proven SEO strategies help remodeling contractors rank #1 for high-intent keywords in their service areas, driving qualified leads that convert into high-value projects.',
       buttonText: 'Explore SEO Services',
       buttonHref: '/services/seo',
-      imageSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+      imageSrc: '/assets/googleconsole.png',
       imageAlt: 'SEO analytics dashboard showing ranking improvements',
-      priority: true
+      priority: true,
+      imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
+      imageQuality: 100
     },
     {
       id: 'ppc',
@@ -26,8 +28,10 @@ const ServicesPage = () => {
       description: 'Generate instant, qualified leads with targeted pay-per-click campaigns. We create and optimize Google Ads, Facebook Ads, and other platforms to deliver measurable ROI - turning ad spend into booked projects for your remodeling business.',
       buttonText: 'Learn About PPC',
       buttonHref: '/services/ppc',
-      imageSrc: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80',
-      imageAlt: 'Digital advertising campaign performance metrics'
+      imageSrc: '/assets/ppcmain.jpeg',
+      imageAlt: 'Digital advertising campaign performance metrics',
+      imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
+      imageQuality: 100
     },
     {
       id: 'adwords',
@@ -35,8 +39,10 @@ const ServicesPage = () => {
       description: 'Maximize your Google Ads performance with expert campaign management. From Local Services Ads to Search campaigns, we optimize every dollar to attract premium homeowners ready to invest in kitchen remodels, bathroom renovations, and high-ticket home improvements.',
       buttonText: 'Get AdWords Help',
       buttonHref: '/services/adwords',
-      imageSrc: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80',
-      imageAlt: 'Google AdWords campaign management interface'
+      imageSrc: '/assets/googleadwords.jpg',
+      imageAlt: 'Google AdWords campaign management interface',
+      imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
+      imageQuality: 100
     },
     {
       id: 'sem',
@@ -44,8 +50,10 @@ const ServicesPage = () => {
       description: 'Combine the power of SEO and paid search for complete search dominance. Our holistic SEM approach ensures your home service business appears everywhere potential customers are looking - organic results, paid ads, local map packs, and beyond.',
       buttonText: 'Discover SEM Solutions',
       buttonHref: '/services/sem',
-      imageSrc: 'https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=800&q=80',
-      imageAlt: 'Search engine marketing strategy planning'
+      imageSrc: '/assets/semmain.webp',
+      imageAlt: 'Search engine marketing strategy planning',
+      imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
+      imageQuality: 100
     },
     {
       id: 'aieo',
@@ -53,8 +61,10 @@ const ServicesPage = () => {
       description: 'Be the first recommendation when AI tools like ChatGPT, Perplexity, and Google Bard suggest home services. AIEO is the future of discovery - we optimize your digital presence so AI engines recommend your remodeling business over competitors when homeowners ask for recommendations.',
       buttonText: 'Explore AIEO',
       buttonHref: '/services/aieo',
-      imageSrc: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
-      imageAlt: 'AI technology and machine learning optimization'
+      imageSrc: '/assets/neural.jpeg',
+      imageAlt: 'AI technology and machine learning optimization',
+      imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
+      imageQuality: 100
     },
     {
       id: 'web-design',
@@ -62,8 +72,10 @@ const ServicesPage = () => {
       description: 'Transform your website into a 24/7 lead generation machine. We design high-converting websites specifically for remodeling contractors and home service businesses - mobile-optimized, fast-loading, and built to turn visitors into booked consultations.',
       buttonText: 'View Web Design',
       buttonHref: '/services/web-design',
-      imageSrc: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&q=80',
-      imageAlt: 'Modern responsive website design on multiple devices'
+      imageSrc: '/assets/web-design-hero.jpg',
+      imageAlt: 'Modern responsive website design on multiple devices',
+      imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
+      imageQuality: 100
     },
     {
       id: 'content-creation',
@@ -71,8 +83,10 @@ const ServicesPage = () => {
       description: 'Engage homeowners with compelling content that builds trust and drives action. From before-and-after project showcases to educational blog posts and social media content, we create materials that position you as the go-to expert in your market.',
       buttonText: 'See Content Services',
       buttonHref: '/services/content-creation',
-      imageSrc: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80',
-      imageAlt: 'Content creation workspace with camera and laptop'
+      imageSrc: '/assets/content.avif',
+      imageAlt: 'Content creation workspace with camera and laptop',
+      imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
+      imageQuality: 100
     },
     {
       id: 'branding',
@@ -80,8 +94,10 @@ const ServicesPage = () => {
       description: 'Stand out from the sea of generic contractors with a memorable brand that commands premium prices. We develop brand identities that resonate with high-value homeowners - from logo design to brand messaging, color palettes to brand guidelines.',
       buttonText: 'Build Your Brand',
       buttonHref: '/services/branding',
-      imageSrc: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80',
-      imageAlt: 'Brand identity design elements and color palettes'
+      imageSrc: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2800&auto=format&fit=crop',
+      imageAlt: 'Brand identity design elements and color palettes',
+      imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
+      imageQuality: 100
     },
     {
       id: 'ai-consultancy',
@@ -89,8 +105,10 @@ const ServicesPage = () => {
       description: 'Leverage artificial intelligence to automate workflows, reduce costs, and scale your business. From AI-powered chatbots and automated scheduling to intelligent customer service and lead qualification, we help you work smarter, not harder.',
       buttonText: 'Automate with AI',
       buttonHref: '/services/ai-consultancy',
-      imageSrc: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80',
-      imageAlt: 'Artificial intelligence automation technology'
+      imageSrc: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2800&auto=format&fit=crop',
+      imageAlt: 'Artificial intelligence automation technology',
+      imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
+      imageQuality: 100
     },
     {
       id: 'crm',
@@ -98,8 +116,10 @@ const ServicesPage = () => {
       description: 'Never lose a lead again. We implement and optimize CRM systems specifically designed for home service businesses - tracking every lead, automating follow-ups, and ensuring your sales pipeline flows smoothly from first contact to signed contract.',
       buttonText: 'Optimize Your CRM',
       buttonHref: '/services/crm-consultancy',
-      imageSrc: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
-      imageAlt: 'CRM dashboard showing customer pipeline and analytics'
+      imageSrc: 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2800&auto=format&fit=crop',
+      imageAlt: 'CRM dashboard showing customer pipeline and analytics',
+      imageSizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw',
+      imageQuality: 100
     }
   ]
 

@@ -122,8 +122,8 @@ const Hero = ({
               {subtitle}
             </h5>
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto">
-              <Button variant="primary" customBackgroundColor={buttonColors?.learnMore} className="w-full sm:w-auto">See Our Services</Button>
-              <Button variant="green" customBackgroundColor={buttonColors?.contactUs} className="w-full sm:w-auto">Get Free Audit</Button>
+              <Button variant="primary" customBackgroundColor={buttonColors?.learnMore} className="w-full sm:w-auto" href="/services">See Our Services</Button>
+              <Button variant="green" customBackgroundColor={buttonColors?.contactUs} className="w-full sm:w-auto" href="/about">About Us</Button>
             </div>
 
             {/* Rating Section */}
@@ -221,7 +221,7 @@ const Hero = ({
 
                 <div className="mt-1 sm:mt-2">
                   <Button type="submit" variant="blue" className="w-full">
-                    Get My Free Audit
+                    Get A Free Quotation
                   </Button>
                 </div>
               </form>

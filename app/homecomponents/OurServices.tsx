@@ -24,28 +24,28 @@ const OurServices = () => {
       description: "Rank higher in local and organic search results.",
       icon: Search,
       href: "/services/seo",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+      image: "/assets/googleconsole.png",
     },
     {
       title: "PPC Advertising",
       description: "Drive instant traffic with paid search campaigns.",
       icon: Target,
       href: "/services/ppc",
-      image: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=2340&auto=format&fit=crop",
+      image: "/assets/ppcmain.jpeg",
     },
     {
       title: "Google AdWords",
       description: "Expert campaign management for Google Ads.",
       icon: TrendingUp,
       href: "/services/adwords",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop",
+      image: "/assets/googleadwords.jpg",
     },
     {
       title: "SEM",
       description: "Comprehensive search engine marketing strategies.",
       icon: TrendingUp,
       href: "/services/sem",
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2274&auto=format&fit=crop",
+      image: "/assets/semmain.webp",
     },
     {
       title: "AIEO",
@@ -53,42 +53,42 @@ const OurServices = () => {
       icon: Sparkles,
       href: "/services/aieo",
       isNew: true,
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
+      image: "/assets/neural.jpeg",
     },
     {
       title: "Web Development",
       description: "High-performance websites that convert visitors.",
       icon: Monitor,
       href: "/services/web-design",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2369&auto=format&fit=crop",
+      image: "/assets/web-design-hero.jpg",
     },
     {
       title: "Content Creation",
       description: "Compelling blogs, videos, and social content.",
       icon: PenTool,
       href: "/services/content-creation",
-      image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2340&auto=format&fit=crop",
+      image: "/assets/content.avif",
     },
     {
       title: "Branding",
       description: "Build a memorable identity that stands out.",
       icon: Palette,
       href: "/services/branding",
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2364&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2800&auto=format&fit=crop",
     },
     {
       title: "AI Consultancy",
       description: "Intelligent automation for your operations.",
       icon: Bot,
       href: "/services/ai-consultancy",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2340&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2800&auto=format&fit=crop",
     },
     {
       title: "CRM Consultancy",
       description: "Optimize your sales pipeline and relationships.",
       icon: Database,
       href: "/services/crm-consultancy",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2340&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2800&auto=format&fit=crop",
     },
   ];
 
@@ -97,7 +97,7 @@ const OurServices = () => {
       <div className="max-w-[1400px] lg:max-w-[1600px] xl:max-w-[1800px] 2xl:max-w-[2200px] mx-auto">
         {/* Main Heading */}
         <h2 className="text-4xl font-bold text-gray-900 text-center mb-4 tracking-tight">
-          Our Marketing Services
+          Our Services
         </h2>
         <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
           Everything your home service business needs to dominate your local market and scale profitably

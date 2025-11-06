@@ -211,7 +211,7 @@ const Header = ({ enableScrollEffects = false, buttonText = 'Get Free Audit', bu
             <div className="flex items-center gap-3">
               {/* CTA Button - Hidden on mobile */}
               <div className="hidden md:block">
-                <Button variant="blue" customBackgroundColor={buttonColor}>{buttonText}</Button>
+                <Button variant="blue" customBackgroundColor={buttonColor} href="/contact">{buttonText}</Button>
               </div>
 
               {/* Hamburger Menu Button - Mobile Only */}
