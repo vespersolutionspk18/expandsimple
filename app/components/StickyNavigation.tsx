@@ -104,16 +104,16 @@ const StickyNavigation = ({ items, accentColor = '#1d4ed8' }: StickyNavigationPr
             : 'relative'
         } transition-none`}
       >
-        <div className="mx-auto max-w-4xl px-4">
-          <div className="relative bg-gray-100 border border-gray-300 rounded-full px-2 py-2">
+        <div className="mx-auto max-w-4xl px-2 sm:px-3 md:px-4">
+          <div className="relative bg-gray-100 border border-gray-300 rounded-full px-1 sm:px-1.5 md:px-2 py-1.5 sm:py-1.5 md:py-2">
             <LayoutGroup>
               {/* Navigation items */}
-              <nav className="relative flex items-center justify-center gap-1 flex-nowrap">
+              <nav className="relative flex items-center justify-center gap-0.5 sm:gap-1 flex-nowrap overflow-x-auto scrollbar-hide">
                 {items.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className="relative rounded-full overflow-hidden px-5 py-2.5 text-sm font-medium whitespace-nowrap"
+                    className="relative rounded-full overflow-hidden px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 text-xs sm:text-sm font-medium whitespace-nowrap"
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                   >
                     {/* Indicator background */}

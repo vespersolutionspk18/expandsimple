@@ -3,16 +3,16 @@ import React from 'react'
 
 const Hero = () => {
   return (
-  <div className="p-10 mt-24 flex flex-col gap-16">
-        <div className="flex flex-row gap-10 justify-between w-full" >
-        <h1 className="text-7xl font-thick text-black/95 tracking-tighter w-[40%]">
+  <div className="p-4 sm:p-6 md:p-8 lg:p-10 mt-16 sm:mt-20 md:mt-24 flex flex-col gap-8 sm:gap-10 md:gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 justify-between w-full" >
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-thick text-black/95 tracking-tighter w-full lg:w-[40%]">
             Web Design & Development
         </h1>
-        <h5 className="text-2xl tracking-tighter leading-tight text-black/90 w-[50%]">
+        <h5 className="text-base sm:text-lg md:text-xl lg:text-2xl tracking-tighter leading-tight text-black/90 w-full lg:w-[50%]">
 Websites that turn visitors into customers. Custom web design for home service businesses that need to grow. Mobile-first, conversion-optimized, and built to generate leads—not just look pretty. Get a website that works as hard as you do.
         </h5>
       </div>
-      <div className="rounded-3xl overflow-hidden relative w-full h-[600px] border border-black/20">
+      <div className="rounded-2xl sm:rounded-3xl overflow-hidden relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] border border-black/20">
         <img
           src="/assets/web-design-hero.jpg"
           alt="Apple monitors displaying web design"

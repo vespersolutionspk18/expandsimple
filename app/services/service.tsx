@@ -24,15 +24,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   }
 
   const contentSection = (
-    <div className="w-full lg:w-1/2 flex flex-col gap-7">
-      <HeadingTag 
-        className="text-4xl lg:text-5xl tracking-tighter font-[550]"
+    <div className="w-full lg:w-1/2 flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-7">
+      <HeadingTag
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tighter font-[550]"
         id={`service-${service.id}-title`}
       >
         {service.title}
       </HeadingTag>
-      <p 
-        className="text-lg lg:text-xl leading-relaxed"
+      <p
+        className="text-base sm:text-lg lg:text-xl leading-relaxed"
         id={`service-${service.id}-description`}
       >
         {service.description}
@@ -50,8 +50,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   )
 
   const imageSection = (
-    <div className="w-full lg:w-[45%] flex flex-col gap-7">
-      <div className="relative aspect-square rounded-3xl overflow-hidden border border-black/20">
+    <div className="w-full lg:w-[45%] flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-7">
+      <div className="relative aspect-square rounded-2xl sm:rounded-3xl overflow-hidden border border-black/20">
         <Image
           src={service.imageSrc}
           alt={service.imageAlt}
@@ -69,8 +69,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   )
 
   return (
-    <article 
-      className={`flex flex-col ${isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-10 lg:gap-12 justify-between`}
+    <article
+      className={`flex flex-col ${isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-between`}
       aria-labelledby={`service-${service.id}-title`}
       aria-describedby={`service-${service.id}-description`}
     >
@@ -124,7 +124,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
   } : undefined
 
   const content = (
-    <div className={`flex flex-col gap-16 lg:gap-24 p-6 lg:p-10 tracking-tighter text-black/95 ${sectionClassName}`}>
+    <div className={`flex flex-col gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-24 p-4 sm:p-5 md:p-6 lg:p-8 xl:p-10 tracking-tighter text-black/95 ${sectionClassName}`}>
       {services.map((service, index) => {
         const isFirstImage = index === 0
         const shouldPrioritize = isFirstImage || service.priority

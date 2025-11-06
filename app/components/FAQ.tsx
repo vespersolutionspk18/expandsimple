@@ -75,29 +75,29 @@ const FAQ: React.FC<FAQProps> = ({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
-      <div className="flex flex-row my-16  gap-5 p-5 lg:p-10 text-black/95">
-        <h5 className="text-3xl w-[30%] font-semibold tracking-tighter">
+      <div className="flex flex-col lg:flex-row my-8 sm:my-10 md:my-12 lg:my-16 gap-4 sm:gap-5 md:gap-6 lg:gap-7 p-4 sm:p-5 md:p-6 lg:p-8 xl:p-10 text-black/95">
+        <h5 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl w-full lg:w-[30%] font-semibold tracking-tighter">
           {title.split(' ').map((word, index) => (
             <React.Fragment key={index}>
-              {word}{index === 1 && <br />}{index !== title.split(' ').length - 1 && index !== 1 && ' '}
+              {word}{index === 1 && <br className="hidden lg:block" />}{index !== title.split(' ').length - 1 && index !== 1 && ' '}
             </React.Fragment>
           ))}
         </h5>
-        <div className="w-[70%] flex flex-col gap-5">
+        <div className="w-full lg:w-[70%] flex flex-col gap-3 sm:gap-4 md:gap-5">
           {items.map((item) => {
             const isExpanded = expandedItems.has(item.id)
             const isHovered = hoveredItem === item.id
             
             return (
               <div key={item.id}>
-                <motion.div 
+                <motion.div
                   onClick={() => toggleItem(item.id)}
                   onHoverStart={() => setHoveredItem(item.id)}
                   onHoverEnd={() => setHoveredItem(null)}
-                  initial={{ borderRadius: 16 }}
-                  animate={{ borderRadius: isHovered ? 28 : 16 }}
+                  initial={{ borderRadius: 12 }}
+                  animate={{ borderRadius: isHovered ? 20 : 12 }}
                   transition={{ duration: 0.15, ease: 'easeOut' }}
-                  className="pl-5 pr-3 py-3 flex flex-row justify-between text-2xl  font-medium tracking-tighter text-black/95 items-center bg-stone-200/40 cursor-pointer overflow-hidden"
+                  className="pl-3 sm:pl-4 md:pl-5 pr-2 sm:pr-3 py-2 sm:py-2.5 md:py-3 flex flex-row justify-between text-base sm:text-lg md:text-xl lg:text-2xl font-medium tracking-tighter text-black/95 items-center bg-stone-200/40 cursor-pointer overflow-hidden"
                 >
                   <div className="relative overflow-hidden">
                     <motion.h5
@@ -118,12 +118,12 @@ const FAQ: React.FC<FAQProps> = ({
                       {item.question}
                     </motion.h5>
                   </div>
-                  <motion.div 
-                    className="h-12 w-12 rounded-full bg-stone-200 flex items-center justify-center"
+                  <motion.div
+                    className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full bg-stone-200 flex items-center justify-center flex-shrink-0"
                     animate={{ rotate: isExpanded ? 45 : 0 }}
                     transition={{ duration: 0.3, ease: 'easeInOut' }}
                   >
-                    <p className="text-2xl text-black/95">+</p>
+                    <p className="text-lg sm:text-xl md:text-2xl text-black/95">+</p>
                   </motion.div>
                 </motion.div>
                 
@@ -139,7 +139,7 @@ const FAQ: React.FC<FAQProps> = ({
                       }}
                       className="overflow-hidden"
                     >
-                      <div className="pt-3 pb-1 px-4 text-lg text-black/80">
+                      <div className="pt-2 sm:pt-2.5 md:pt-3 pb-1 px-3 sm:px-4 text-sm sm:text-base md:text-lg text-black/80">
                         {item.answer}
                       </div>
                     </motion.div>
