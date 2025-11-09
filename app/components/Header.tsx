@@ -404,20 +404,20 @@ const Header = ({ enableScrollEffects = false, buttonText = 'Get Free Ranking Re
               {/* Other Pages */}
               <div className="mt-4">
                 <Link
+                  href="/industries"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-3 text-lg text-black hover:bg-gray-100 rounded-lg transition-colors block"
+                  style={{ fontFamily: 'var(--font-figtree)', fontWeight: 500 }}
+                >
+                  Industries
+                </Link>
+                <Link
                   href="/work"
                   onClick={() => setMobileMenuOpen(false)}
                   className="px-4 py-3 text-lg text-black hover:bg-gray-100 rounded-lg transition-colors block"
                   style={{ fontFamily: 'var(--font-figtree)', fontWeight: 500 }}
                 >
                   See Our Work
-                </Link>
-                <Link
-                  href="/careers"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="px-4 py-3 text-lg text-black hover:bg-gray-100 rounded-lg transition-colors block"
-                  style={{ fontFamily: 'var(--font-figtree)', fontWeight: 500 }}
-                >
-                  Careers
                 </Link>
                 <Link
                   href="/contact"

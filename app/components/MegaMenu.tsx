@@ -177,7 +177,11 @@ const MegaMenu = ({ hoverColor = '#1d4ed8' }: MegaMenuProps) => {
     }
   };
 
-  const simpleLinks = ["Work", "Careers", "Contact"];
+  const simpleLinks = [
+    { label: "Industries", href: "/industries" },
+    { label: "See Our Work", href: "/work" },
+    { label: "Contact", href: "/contact" }
+  ];
 
 
   const handleMouseEnter = (key: string) => {
@@ -301,14 +305,14 @@ const MegaMenu = ({ hoverColor = '#1d4ed8' }: MegaMenuProps) => {
       
       {simpleLinks.map((link) => (
         <Link
-          key={link}
-          href={`/${link.toLowerCase().replace(/\s+/g, '-')}`}
+          key={link.href}
+          href={link.href}
           className="px-5 py-2 text-lg text-black transition-all duration-200 rounded-full hover:bg-white/50 whitespace-nowrap"
           style={{ fontFamily: 'var(--font-figtree)', fontWeight: 500 }}
           onMouseEnter={(e) => e.currentTarget.style.color = hoverColor}
           onMouseLeave={(e) => e.currentTarget.style.color = 'black'}
         >
-          {link}
+          {link.label}
         </Link>
       ))}
     </nav>

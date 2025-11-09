@@ -6,26 +6,60 @@ import Link from 'next/link';
 
 interface LeadChangeProps {
   text?: string;
+  options?: string[];
+  rotationInterval?: number; // Time in milliseconds to rotate between options
 }
 
-const LeadChange: React.FC<LeadChangeProps> = ({ text = "Lead The Change" }) => {
+const LeadChange: React.FC<LeadChangeProps> = ({
+  text = "Lead The Change",
+  options = [],
+  rotationInterval = 3000
+}) => {
   const marqueeRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
+  const [currentText, setCurrentText] = useState(options.length > 0 ? options[0] : text);
+  const marqueeTl = useRef<gsap.core.Timeline | null>(null);
+  const currentIndexRef = useRef(0);
 
+  // Handle text rotation if options are provided
+  useEffect(() => {
+    if (options.length === 0) return;
+
+    const interval = setInterval(() => {
+      currentIndexRef.current = (currentIndexRef.current + 1) % options.length;
+      setCurrentText(options[currentIndexRef.current]);
+    }, rotationInterval);
+
+    return () => clearInterval(interval);
+  }, [options, rotationInterval]);
+
+  // Marquee animation
   useEffect(() => {
     if (!marqueeRef.current) return;
 
     const marqueeContent = marqueeRef.current.querySelector('.marquee-content');
     if (!marqueeContent) return;
 
+    // Remove existing clone if any
+    const existingClone = marqueeRef.current.querySelector('.marquee-clone');
+    if (existingClone) {
+      existingClone.remove();
+    }
+
     // Clone the content for seamless loop
     const clone = marqueeContent.cloneNode(true) as HTMLElement;
+    clone.classList.add('marquee-clone');
     marqueeRef.current.appendChild(clone);
 
     // Get the width of one set of content
     const contentWidth = marqueeContent.getBoundingClientRect().width;
+
+    // Kill existing timeline
+    if (marqueeTl.current) {
+      marqueeTl.current.kill();
+    }
 
     // Set up the animation
     gsap.set([marqueeContent, clone], {
@@ -33,18 +67,20 @@ const LeadChange: React.FC<LeadChangeProps> = ({ text = "Lead The Change" }) => 
     });
 
     // Create the timeline
-    const tl = gsap.timeline({ repeat: -1 });
-    
-    tl.to([marqueeContent, clone], {
+    marqueeTl.current = gsap.timeline({ repeat: -1 });
+
+    marqueeTl.current.to([marqueeContent, clone], {
       x: -contentWidth,
       duration: 20,
       ease: "none"
     });
 
     return () => {
-      tl.kill();
+      if (marqueeTl.current) {
+        marqueeTl.current.kill();
+      }
     };
-  }, []);
+  }, [currentText]);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -118,15 +154,15 @@ const LeadChange: React.FC<LeadChangeProps> = ({ text = "Lead The Change" }) => 
       <div ref={marqueeRef} className="flex whitespace-nowrap">
         <div className="marquee-content flex items-center">
           <span className="text-black font-sans text-4xl md:text-6xl lg:text-8xl xl:text-9xl">
-            {text}
+            {currentText}
           </span>
           <span className="text-black mx-4 md:mx-6 lg:mx-8 text-2xl md:text-4xl lg:text-6xl xl:text-7xl">•</span>
           <span className="text-black font-sans text-4xl md:text-6xl lg:text-8xl xl:text-9xl">
-            {text}
+            {currentText}
           </span>
           <span className="text-black mx-4 md:mx-6 lg:mx-8 text-2xl md:text-4xl lg:text-6xl xl:text-7xl">•</span>
           <span className="text-black font-sans text-4xl md:text-6xl lg:text-8xl xl:text-9xl">
-            {text}
+            {currentText}
           </span>
           <span className="text-black mx-4 md:mx-6 lg:mx-8 text-2xl md:text-4xl lg:text-6xl xl:text-7xl">•</span>
         </div>

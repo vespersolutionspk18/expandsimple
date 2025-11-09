@@ -62,7 +62,21 @@ export default function Home() {
         }
       ]}
     />
-    <LeadChange text="Ready To Expand?"/>
+    <LeadChange
+      options={[
+        "Optimize for AI Search",
+        "Rank Higher with SEO",
+        "Drive Traffic with PPC",
+        "Build High-Performance Websites",
+        "Automate with AI Consultancy",
+        "Optimize Your CRM Pipeline",
+        "Create Compelling Content",
+        "Build Your Brand Identity",
+        "Master Google AdWords",
+        "Dominate with SEM"
+      ]}
+      rotationInterval={4000}
+    />
     <Footer />
     </main>
    </>

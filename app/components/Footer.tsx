@@ -15,9 +15,9 @@ const Footer = ({ backgroundColor = '#1d4ed8' }: FooterProps) => {
   return (
     <div className="p-3 sm:p-5">
         <div className="tracking-tighter text-white px-4 sm:px-8 md:px-12 lg:px-16 pt-8 sm:pt-12 md:pt-16 pb-4 rounded-2xl sm:rounded-3xl flex flex-col gap-6 sm:gap-8 md:gap-10" style={{ backgroundColor }}>
-        <div className="w-full flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-10">
-            <div className="flex flex-col gap-4 sm:gap-5 md:gap-7 w-full lg:w-[40%]">
-                <h5 className="text-2xl sm:text-3xl md:text-4xl w-full lg:w-[80%]">Ready to Dominate Your Market?</h5>
+        <div className="w-full flex flex-col xl:flex-row gap-6 sm:gap-8 xl:gap-8">
+            <div className="flex flex-col gap-4 sm:gap-5 md:gap-7 w-full xl:w-[28%] flex-shrink-0">
+                <h5 className="text-2xl sm:text-3xl md:text-4xl lg:w-[90%]">Ready to Dominate Your Market?</h5>
                 <div className="relative w-full max-w-md">
                     <input
                         type="email"
@@ -43,7 +43,7 @@ const Footer = ({ backgroundColor = '#1d4ed8' }: FooterProps) => {
             </div>
 
             {/* Navigation Links Grid */}
-            <div className="w-full lg:w-[60%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="w-full xl:flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr_1.5fr] gap-6 sm:gap-8 xl:gap-6">
             <div className="flex flex-col gap-2 sm:gap-3">
             <h5 className="text-xl sm:text-2xl text-white">
                 Navigation
@@ -52,8 +52,8 @@ const Footer = ({ backgroundColor = '#1d4ed8' }: FooterProps) => {
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/')}>Home</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/about')}>About</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/services')}>Services</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/industries')}>Industries</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/work')}>See Our Work</li>
-                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/careers')}>Careers</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/contact')}>Contact</li>
             </ul>
             </div>
@@ -65,9 +65,26 @@ const Footer = ({ backgroundColor = '#1d4ed8' }: FooterProps) => {
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/services/seo')}>SEO</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/services/ppc')}>PPC Advertising</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/services/aieo')}>AIEO</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/services/sem')}>SEM</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/services/web-design')}>Web Design</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/services/content-creation')}>Content Creation</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/services/branding')}>Branding</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/services/crm-consultancy')}>CRM Consultancy</li>
+            </ul>
+            </div>
+            <div className="flex flex-col gap-2 sm:gap-3">
+            <h5 className="text-xl sm:text-2xl text-white">
+                Industries
+            </h5>
+            <ul className="text-base sm:text-lg md:text-xl text-white font-normal">
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/industries/home-repair-maintenance')}>Home Repair</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/industries/cleaning-sanitation')}>Cleaning</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/industries/outdoor-landscaping')}>Landscaping</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/industries/home-improvement-remodeling')}>Remodeling</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/industries/energy-safety-technology')}>Energy & Tech</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/industries/moving-storage')}>Moving</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/industries/specialty-niche-services')}>Specialty Services</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/industries/personal-in-home-care')}>Personal Care</li>
             </ul>
             </div>
             <div className="flex flex-col gap-2 sm:gap-3">
@@ -77,11 +94,11 @@ const Footer = ({ backgroundColor = '#1d4ed8' }: FooterProps) => {
             <div className="flex flex-col gap-3 sm:gap-4">
                 <div className="flex items-center gap-2 sm:gap-3 group cursor-pointer">
                     <Phone className="!text-white group-hover:!text-black transition-colors duration-150 flex-shrink-0" size={18} />
-                    <span className="text-base sm:text-lg md:text-xl font-normal !text-white group-hover:!text-black transition-colors duration-150">1-800-EXPAND</span>
+                    <span className="text-base sm:text-lg md:text-xl font-normal !text-white group-hover:!text-black transition-colors duration-150 whitespace-nowrap">1-800-EXPAND</span>
                 </div>
                 <div className="flex items-center gap-2 sm:gap-3 group cursor-pointer">
                     <Mail className="!text-white group-hover:!text-black transition-colors duration-150 flex-shrink-0" size={18} />
-                    <span className="text-base sm:text-lg md:text-xl font-normal !text-white group-hover:!text-black transition-colors duration-150">hello@expandmarketing.com</span>
+                    <span className="text-base sm:text-lg md:text-xl font-normal !text-white group-hover:!text-black transition-colors duration-150 whitespace-nowrap">hello@expandmarketing.com</span>
                 </div>
                 <div className="flex gap-2 sm:gap-3 group cursor-pointer">
                     <MapPin className="!text-white group-hover:!text-black transition-colors duration-150 flex-shrink-0 mt-1" size={18} />
