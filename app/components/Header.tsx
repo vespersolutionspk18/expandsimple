@@ -41,6 +41,26 @@ const Header = ({ enableScrollEffects = false, buttonText = 'Get Free Ranking Re
     {
       text: "Proven Marketing Strategies Built Exclusively for Contractors",
       link: true
+    },
+    {
+      text: "Is Your Business Invisible on Google? Find Out Free",
+      link: true
+    },
+    {
+      text: "See How You Rank vs Competitors - Free Audit Available",
+      link: true
+    },
+    {
+      text: "Losing Leads to Competitors? Check Your Rankings Now",
+      link: true
+    },
+    {
+      text: "Most Contractors Lose 60% of Leads - Are You One of Them?",
+      link: true
+    },
+    {
+      text: "How Does Your Business Show Up Online? Free Check",
+      link: true
     }
   ]
 

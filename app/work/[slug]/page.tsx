@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation'
 import Header from '@/app/components/Header'
 import Footer from '@/app/components/Footer'
 import LeadChange from '@/app/homecomponents/LeadChange'
+import Button from '@/app/components/Button'
 import { projects } from '@/app/types/project'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -22,7 +23,7 @@ const ProjectDetailPage = () => {
     return (
       <>
         <Header />
-        <main className="pt-[11.8rem] md:pt-[11.2rem]">
+        <main className="pt-[10rem] md:pt-[9.5rem]">
           <div className="p-10 text-center">
             <h1 className="text-4xl font-bold text-black/80 mb-4">Project Not Found</h1>
             <p className="text-xl text-black/60 mb-8">The project you&apos;re looking for doesn&apos;t exist.</p>
@@ -39,9 +40,9 @@ const ProjectDetailPage = () => {
   return (
     <>
       <Header />
-      <main className="pt-[11.8rem] md:pt-[11.2rem]">
+      <main className="pt-[10rem] md:pt-[9.5rem]">
         {/* Back Button */}
-        <div className="p-5 md:p-10">
+        <div className="px-5 md:px-10 pt-5 md:pt-6 pb-4 md:pb-5">
           <Link
             href="/work"
             className="inline-flex items-center gap-2 text-black/70 hover:text-[#1d4ed8] transition-colors font-medium"
@@ -52,7 +53,7 @@ const ProjectDetailPage = () => {
         </div>
 
         {/* Hero Image Section */}
-        <div className="p-5 md:p-10">
+        <div className="px-5 md:px-10 pb-5 md:pb-10">
           <div className="rounded-2xl md:rounded-3xl overflow-hidden relative h-[400px] md:h-[500px] lg:h-[600px]">
             <Image
               src={project.heroImage}
@@ -219,20 +220,12 @@ const ProjectDetailPage = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-                <Link
-                  href="/contact"
-                  className="px-8 py-4 bg-white text-[#1d4ed8] font-bold rounded-full hover:bg-stone-100 transition-colors inline-flex items-center justify-center gap-2"
-                >
+                <Button variant="secondary" href="/contact" size="lg">
                   Get Your Free Audit
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-                <Link
-                  href="/work"
-                  className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-medium rounded-full border-2 border-white/30 hover:bg-white/20 transition-colors inline-flex items-center justify-center gap-2"
-                >
+                </Button>
+                <Button variant="white" href="/work" size="lg">
                   View More Projects
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
+                </Button>
               </div>
             </div>
           </div>

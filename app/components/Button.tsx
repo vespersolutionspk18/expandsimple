@@ -9,7 +9,7 @@ interface ButtonProps {
   children: React.ReactNode
   href?: string
   onClick?: () => void
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'green' | 'blue' | 'purple' | 'crmGreen' | 'webSuiteOrange'
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'green' | 'blue' | 'purple' | 'crmGreen' | 'webSuiteOrange' | 'white'
   size?: 'sm' | 'md' | 'lg'
   className?: string
   disabled?: boolean
@@ -49,7 +49,8 @@ const Button: React.FC<ButtonProps> = ({
     blue: 'bg-[#1d4ed8] text-white',
     purple: 'bg-[#581c87] text-white ',
     crmGreen: 'bg-[#166534] text-white ',
-    webSuiteOrange: 'bg-[#ea580c] text-white '
+    webSuiteOrange: 'bg-[#ea580c] text-white ',
+    white: 'bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 hover:bg-white/20'
   }
 
   const sizes = {

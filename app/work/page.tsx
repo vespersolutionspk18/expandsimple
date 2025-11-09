@@ -4,60 +4,17 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import LeadChange from '../homecomponents/LeadChange'
+import Button from '../components/Button'
 import { projects } from '../types/project'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Briefcase } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 const WorkPage = () => {
   return (
     <>
       <Header />
       <main className="pt-[11.8rem] md:pt-[11.2rem]">
-        {/* Hero Section */}
-        <div className="p-5 md:p-10">
-          <div className="rounded-2xl md:rounded-3xl bg-gradient-to-br from-[#1d4ed8] to-[#1e40af] text-white p-8 md:p-16 relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-10 right-10 w-64 h-64 bg-white rounded-full blur-3xl" />
-              <div className="absolute bottom-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl" />
-            </div>
-
-            <div className="relative z-10 max-w-5xl mx-auto text-center flex flex-col gap-6 md:gap-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 w-fit mx-auto bg-white/20 backdrop-blur-sm rounded-full border border-white/30">
-                <Briefcase className="w-5 h-5" />
-                <span className="text-sm md:text-base font-medium">Our Success Stories</span>
-              </div>
-
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter">
-                Real Results for Real Businesses
-              </h1>
-
-              <p className="text-lg md:text-xl lg:text-2xl tracking-tight text-white/90 max-w-3xl mx-auto">
-                See how we&apos;ve helped home service businesses dominate their markets, increase revenue, and build brands that last. These aren&apos;t just case studies - they&apos;re blueprints for your success.
-              </p>
-
-              {/* Stats Row */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-6">
-                <div className="flex flex-col gap-2 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                  <div className="text-4xl md:text-5xl font-bold">$47M+</div>
-                  <p className="text-sm text-white/70">Revenue Generated for Clients</p>
-                </div>
-
-                <div className="flex flex-col gap-2 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                  <div className="text-4xl md:text-5xl font-bold">500+</div>
-                  <p className="text-sm text-white/70">Successful Projects Completed</p>
-                </div>
-
-                <div className="flex flex-col gap-2 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                  <div className="text-4xl md:text-5xl font-bold">3.8x</div>
-                  <p className="text-sm text-white/70">Average Return on Investment</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Projects Grid Section */}
         <div className="p-6 md:p-10 flex flex-col gap-8 md:gap-10 tracking-tighter">
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-16 justify-between">
@@ -165,20 +122,12 @@ const WorkPage = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-                <Link
-                  href="/contact"
-                  className="px-8 py-4 bg-[#1d4ed8] text-white font-medium rounded-full hover:bg-[#1e40af] transition-colors inline-flex items-center justify-center gap-2"
-                >
+                <Button variant="blue" href="/contact" size="lg">
                   Get Your Free Audit
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-                <Link
-                  href="/services"
-                  className="px-8 py-4 bg-white text-black font-medium rounded-full border-2 border-stone-300 hover:border-[#1d4ed8] transition-colors inline-flex items-center justify-center gap-2"
-                >
+                </Button>
+                <Button variant="secondary" href="/services" size="lg">
                   See Our Services
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
+                </Button>
               </div>
             </div>
           </div>
