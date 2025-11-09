@@ -52,7 +52,7 @@ const Footer = ({ backgroundColor = '#1d4ed8' }: FooterProps) => {
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/')}>Home</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/about')}>About</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/services')}>Services</li>
-                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/case-studies')}>Case Studies</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/work')}>Work</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/careers')}>Careers</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/contact')}>Contact</li>
             </ul>
@@ -102,7 +102,7 @@ const Footer = ({ backgroundColor = '#1d4ed8' }: FooterProps) => {
                 whiteSpace: 'normal'
             }}
         >
-            Marketing Excellence Since 2015
+            Marketing Since 2015
         </h5>
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 py-4 border-t border-white/20" id="here">
             <div className="flex flex-wrap items-center gap-2 sm:gap-3">
@@ -115,7 +115,7 @@ const Footer = ({ backgroundColor = '#1d4ed8' }: FooterProps) => {
                 />
                 <span className="text-white/80 text-xs sm:text-sm ml-0 sm:ml-4">© Expand Marketing 2025</span>
                 <span className="text-white/60 text-xs sm:text-sm hidden sm:inline">|</span>
-                <span className="text-white/80 text-xs sm:text-sm">Company Reg Number 10529058</span>
+              
             </div>
             <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-white/80 text-xs sm:text-sm">
                 <a href="#" className="hover:text-white transition-colors">Home Services Marketing</a>

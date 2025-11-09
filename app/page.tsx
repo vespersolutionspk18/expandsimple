@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import PurpleBoxSection from "./homecomponents/PurpleBoxSection";
 import Header from "./components/Header";
+import StickyPopup from "./components/StickyPopup";
 
 
 export default function Home() {
@@ -65,6 +66,7 @@ export default function Home() {
     <LeadChange text="Ready To Expand?"/>
     <Footer />
     </main>
+    <StickyPopup delay={5000} />
    </>
   );
 }

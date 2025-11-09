@@ -15,7 +15,7 @@ interface HeaderProps {
   promoBannerColor?: string
 }
 
-const Header = ({ enableScrollEffects = false, buttonText = 'Get Free Audit', buttonColor, hoverColor = '#1d4ed8', promoBannerColor = '#1d4ed8' }: HeaderProps) => {
+const Header = ({ enableScrollEffects = false, buttonText = 'Get Free Ranking Report', buttonColor, hoverColor = '#1d4ed8', promoBannerColor = '#1d4ed8' }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [currentPromoIndex, setCurrentPromoIndex] = useState(0)
@@ -111,7 +111,7 @@ const Header = ({ enableScrollEffects = false, buttonText = 'Get Free Audit', bu
 
           {/* Center Content */}
           <div className="flex items-center justify-center gap-2 flex-wrap">
-            <span className="text-white font-semibold text-sm sm:text-base md:text-lg" style={{ fontFamily: 'var(--font-figtree)', fontWeight: 600 }}>
+            <span className="text-white font-semibold text-md sm:text-lg md:text-xl" style={{ fontFamily: 'var(--font-figtree)', fontWeight: 600 }}>
               {currentPromo.text}
             </span>
             {currentPromo.link && (
@@ -383,6 +383,14 @@ const Header = ({ enableScrollEffects = false, buttonText = 'Get Free Audit', bu
 
               {/* Other Pages */}
               <div className="mt-4">
+                <Link
+                  href="/work"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-3 text-lg text-black hover:bg-gray-100 rounded-lg transition-colors block"
+                  style={{ fontFamily: 'var(--font-figtree)', fontWeight: 500 }}
+                >
+                  Work
+                </Link>
                 <Link
                   href="/careers"
                   onClick={() => setMobileMenuOpen(false)}

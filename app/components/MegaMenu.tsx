@@ -177,7 +177,7 @@ const MegaMenu = ({ hoverColor = '#1d4ed8' }: MegaMenuProps) => {
     }
   };
 
-  const simpleLinks = ["Careers", "Contact"];
+  const simpleLinks = ["Work", "Careers", "Contact"];
 
 
   const handleMouseEnter = (key: string) => {
