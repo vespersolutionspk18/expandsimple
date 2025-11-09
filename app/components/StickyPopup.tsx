@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { X, TrendingDown, Search, AlertCircle } from 'lucide-react'
+import { X, Search, Sparkles } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -43,110 +43,100 @@ const StickyPopup: React.FC<StickyPopupProps> = ({ delay = 5000 }) => {
   return (
     <AnimatePresence>
       {isVisible && (
-        <>
-          {/* Backdrop Overlay */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[10000]"
-            onClick={handleClose}
-          />
+        <motion.div
+          initial={{ opacity: 0, y: 100, scale: 0.95 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            scale: [0.98, 1.02, 0.98], // Pulsing scale animation
+          }}
+          exit={{ opacity: 0, y: 100, scale: 0.95 }}
+          transition={{
+            opacity: { duration: 0.4 },
+            y: { duration: 0.4 },
+            scale: {
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }
+          }}
+          className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[10000] w-[95%] max-w-5xl"
+        >
+          <div className="bg-gradient-to-r from-[#1d4ed8] to-[#1e40af] rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden border-4 border-white">
+            {/* Close Button */}
+            <button
+              onClick={handleClose}
+              className="absolute top-3 right-3 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/30 transition-colors backdrop-blur-sm"
+              aria-label="Close popup"
+            >
+              <X className="w-5 h-5 text-white" />
+            </button>
 
-          {/* Popup Modal */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            transition={{ duration: 0.4, ease: 'easeOut' }}
-            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[10001] w-[90%] max-w-lg"
-          >
-            <div className="bg-white rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden">
-              {/* Close Button */}
-              <button
-                onClick={handleClose}
-                className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-black/10 hover:bg-black/20 transition-colors"
-                aria-label="Close popup"
-              >
-                <X className="w-5 h-5 text-black/70" />
-              </button>
-
-              {/* Top Section - Blue Gradient */}
-              <div className="bg-gradient-to-br from-[#1d4ed8] to-[#1e40af] p-6 md:p-8 text-white relative overflow-hidden">
-                {/* Background Pattern */}
-                <div className="absolute inset-0 opacity-10">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full blur-2xl" />
-                  <div className="absolute bottom-0 left-0 w-40 h-40 bg-white rounded-full blur-3xl" />
+            {/* Horizontal Layout */}
+            <div className="flex flex-col md:flex-row items-center md:items-stretch gap-4 md:gap-6 p-5 md:p-6 lg:p-8">
+              {/* Left Side - Message */}
+              <div className="flex-1 text-white text-center md:text-left">
+                {/* Badge */}
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-3">
+                  <Sparkles className="w-4 h-4" />
+                  <span className="text-xs font-semibold">FREE ASSESSMENT</span>
                 </div>
 
-                <div className="relative z-10">
-                  {/* Warning Badge */}
-                  <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-4">
-                    <AlertCircle className="w-4 h-4" />
-                    <span className="text-xs md:text-sm font-medium">Free Assessment Available</span>
-                  </div>
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tighter mb-2">
+                  How Does Your Business Rank Online?
+                </h2>
+                <p className="text-sm md:text-base lg:text-lg text-white/90 mb-3 md:mb-0">
+                  Most home service businesses lose 60%+ of leads to competitors who rank higher. Find out where you stand in 60 seconds.
+                </p>
 
-                  <h2 className="text-2xl md:text-3xl font-bold tracking-tighter mb-3">
-                    Is Your Business Invisible Online?
-                  </h2>
-                  <p className="text-base md:text-lg text-white/90 tracking-tight leading-relaxed">
-                    Most contractors lose 60% of potential leads because they can&apos;t be found online when homeowners search.
-                  </p>
+                {/* Trust Elements - Desktop Only */}
+                <div className="hidden md:flex items-center gap-4 mt-4">
+                  <div className="flex items-center gap-2">
+                    <Search className="w-4 h-4 text-white/80" />
+                    <span className="text-xs text-white/80">Free Google Ranking Check</span>
+                  </div>
+                  <span className="text-white/40">•</span>
+                  <span className="text-xs text-white/80">✓ 500+ Contractors Trust Us</span>
                 </div>
               </div>
 
-              {/* Bottom Section - White */}
-              <div className="p-6 md:p-8">
-                {/* Problem Indicators */}
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <TrendingDown className="w-4 h-4 text-red-600" />
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold text-black/90 mb-0.5">Not Ranking on Google?</h4>
-                      <p className="text-xs text-black/60">Your competitors are getting those high-value leads instead.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Search className="w-4 h-4 text-orange-600" />
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold text-black/90 mb-0.5">Low Website Traffic?</h4>
-                      <p className="text-xs text-black/60">You&apos;re leaving money on the table every single day.</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* CTA Section */}
-                <div className="bg-stone-100 rounded-xl p-4 mb-4">
-                  <p className="text-sm font-medium text-black/80 text-center mb-1">
-                    Get Your Free Digital Performance Audit
-                  </p>
-                  <p className="text-xs text-black/60 text-center">
-                    See exactly where you stand and what&apos;s costing you leads. No obligation.
-                  </p>
-                </div>
-
-                {/* CTA Button */}
+              {/* Right Side - CTA */}
+              <div className="flex flex-col justify-center items-center md:items-end gap-3 md:border-l md:border-white/20 md:pl-6 lg:pl-8 w-full md:w-auto">
                 <button
                   onClick={handleCTA}
-                  className="w-full bg-[#1d4ed8] hover:bg-[#1e40af] text-white font-bold py-3.5 md:py-4 rounded-full transition-all duration-200 hover:shadow-lg text-base md:text-lg"
+                  className="bg-white hover:bg-stone-100 text-[#1d4ed8] font-bold px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-200 hover:shadow-xl text-sm md:text-base lg:text-lg whitespace-nowrap w-full md:w-auto flex items-center justify-center gap-2"
                 >
-                  Check My Online Presence (Free)
+                  <span>Get Free Audit Now</span>
+                  <span className="text-xl">→</span>
                 </button>
 
-                {/* Trust Badge */}
-                <p className="text-xs text-center text-black/50 mt-4">
-                  ✓ Used by 500+ home service businesses • No credit card required
+                <p className="text-xs text-white/70 text-center md:text-right">
+                  No credit card • Takes 60 seconds
                 </p>
               </div>
             </div>
-          </motion.div>
-        </>
+
+            {/* Animated Border Glow Effect */}
+            <motion.div
+              className="absolute inset-0 rounded-2xl md:rounded-3xl pointer-events-none"
+              style={{
+                boxShadow: '0 0 0 4px rgba(255, 255, 255, 0.5)',
+              }}
+              animate={{
+                boxShadow: [
+                  '0 0 0 4px rgba(255, 255, 255, 0.3)',
+                  '0 0 0 4px rgba(255, 255, 255, 0.7)',
+                  '0 0 0 4px rgba(255, 255, 255, 0.3)',
+                ]
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            />
+          </div>
+        </motion.div>
       )}
     </AnimatePresence>
   )
