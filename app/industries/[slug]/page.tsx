@@ -105,7 +105,7 @@ const IndustryDetailPage = () => {
         <div className="p-6 md:p-10 flex flex-col gap-8 md:gap-10 tracking-tighter">
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-16 justify-between max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-black/80 font-medium tracking-tighter w-full lg:w-[28%]">
-              Why We're Different
+              Why We&apos;re Different
             </h2>
             <p className="text-black/75 text-xl md:text-2xl tracking-tighter w-full lg:w-[68%] leading-relaxed">
               {industry.description}

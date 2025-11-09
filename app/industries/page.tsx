@@ -147,7 +147,7 @@ const IndustriesPage = () => {
                   Why We Only Serve Home Services
                 </h2>
                 <p className="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">
-                  Specialization isn't a limitation—it's our superpower. Here's why our exclusive focus delivers better results.
+                  Specialization isn&apos;t a limitation—it&apos;s our superpower. Here&apos;s why our exclusive focus delivers better results.
                 </p>
               </div>
 
@@ -158,7 +158,7 @@ const IndustriesPage = () => {
                   </div>
                   <h3 className="text-xl md:text-2xl font-semibold text-black/85 mb-3">We Know Your Customers</h3>
                   <p className="text-base md:text-lg text-black/70 leading-relaxed tracking-tight">
-                    Homeowners search differently than B2B buyers. They need emergency repairs, compare reviews obsessively, and want instant quotes. We know exactly how to rank for "near me" searches, generate reviews, and convert panicked 2am visitors into booked jobs.
+                    Homeowners search differently than B2B buyers. They need emergency repairs, compare reviews obsessively, and want instant quotes. We know exactly how to rank for &quot;near me&quot; searches, generate reviews, and convert panicked 2am visitors into booked jobs.
                   </p>
                 </div>
 
@@ -168,7 +168,7 @@ const IndustriesPage = () => {
                   </div>
                   <h3 className="text-xl md:text-2xl font-semibold text-black/85 mb-3">We Understand Your Business Model</h3>
                   <p className="text-base md:text-lg text-black/70 leading-relaxed tracking-tight">
-                    Seasonal fluctuations, service area targeting, emergency vs. planned jobs, recurring contracts, crew capacity—we've optimized marketing for hundreds of contractors. We know what moves the needle because we've seen it work.
+                    Seasonal fluctuations, service area targeting, emergency vs. planned jobs, recurring contracts, crew capacity—we&apos;ve optimized marketing for hundreds of contractors. We know what moves the needle because we&apos;ve seen it work.
                   </p>
                 </div>
 
@@ -178,7 +178,7 @@ const IndustriesPage = () => {
                   </div>
                   <h3 className="text-xl md:text-2xl font-semibold text-black/85 mb-3">We Speak Your Language</h3>
                   <p className="text-base md:text-lg text-black/70 leading-relaxed tracking-tight">
-                    No marketing jargon or theoretical BS. We talk ROI, cost per lead, booking rates, and revenue per job. You're not paying for "brand awareness"—you're investing in phone calls, online bookings, and closed contracts.
+                    No marketing jargon or theoretical BS. We talk ROI, cost per lead, booking rates, and revenue per job. You&apos;re not paying for &quot;brand awareness&quot;—you&apos;re investing in phone calls, online bookings, and closed contracts.
                   </p>
                 </div>
 
@@ -188,7 +188,7 @@ const IndustriesPage = () => {
                   </div>
                   <h3 className="text-xl md:text-2xl font-semibold text-black/85 mb-3">Proven Playbooks for Your Industry</h3>
                   <p className="text-base md:text-lg text-black/70 leading-relaxed tracking-tight">
-                    We don't start from scratch with every client. We have battle-tested strategies, keyword lists, ad templates, and content frameworks specifically for plumbers, HVAC, landscapers, and every home service niche.
+                    We don&apos;t start from scratch with every client. We have battle-tested strategies, keyword lists, ad templates, and content frameworks specifically for plumbers, HVAC, landscapers, and every home service niche.
                   </p>
                 </div>
               </div>
@@ -210,7 +210,7 @@ const IndustriesPage = () => {
                 By the Numbers
               </h2>
               <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-                These aren't projections—they're real results from home service businesses we've partnered with.
+                These aren&apos;t projections—they&apos;re real results from home service businesses we&apos;ve partnered with.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
