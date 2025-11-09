@@ -52,7 +52,7 @@ const Footer = ({ backgroundColor = '#1d4ed8' }: FooterProps) => {
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/')}>Home</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/about')}>About</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/services')}>Services</li>
-                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/work')}>Work</li>
+                <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/work')}>See Our Work</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/careers')}>Careers</li>
                 <li className="cursor-pointer hover:text-white/80 transition-colors" onClick={() => router.push('/contact')}>Contact</li>
             </ul>

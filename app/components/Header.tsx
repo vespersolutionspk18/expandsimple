@@ -409,7 +409,7 @@ const Header = ({ enableScrollEffects = false, buttonText = 'Get Free Ranking Re
                   className="px-4 py-3 text-lg text-black hover:bg-gray-100 rounded-lg transition-colors block"
                   style={{ fontFamily: 'var(--font-figtree)', fontWeight: 500 }}
                 >
-                  Work
+                  See Our Work
                 </Link>
                 <Link
                   href="/careers"
