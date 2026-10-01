@@ -58,7 +58,7 @@ const contentFAQs = [
   {
     id: 'faq-2',
     question: 'Do you understand our industry well enough to write about it?',
-    answer: 'Yes. We specialize exclusively in home services and have written thousands of articles for remodeling contractors, roofers, tiling companies, plumbers, and other trades. We understand technical terminology, project processes, materials, pricing considerations, and homeowner concerns. Every piece is reviewed for technical accuracy and written in language homeowners understand. You approve all content before publishing.'
+    answer: 'Yes. We specialize exclusively in home services and have written thousands of articles for remodeling contractors, roofers, tiling companies, plumbers, and other trades. We understand technical terminology, project processes, materials, and homeowner concerns. Every piece is reviewed for technical accuracy and written in language homeowners understand. You approve all content before publishing.'
   },
   {
     id: 'faq-3',

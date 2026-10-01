@@ -92,14 +92,14 @@ const Footer = ({ backgroundColor = '#1d4ed8' }: FooterProps) => {
                Get In Touch
             </h5>
             <div className="flex flex-col gap-3 sm:gap-4">
-                <div className="flex items-center gap-2 sm:gap-3 group cursor-pointer">
+                <a href="tel:+14158548336" className="flex items-center gap-2 sm:gap-3 group cursor-pointer">
                     <Phone className="!text-white group-hover:!text-black transition-colors duration-150 flex-shrink-0" size={18} />
-                    <span className="text-base sm:text-lg md:text-xl font-normal !text-white group-hover:!text-black transition-colors duration-150 whitespace-nowrap">1-800-EXPAND</span>
-                </div>
-                <div className="flex items-center gap-2 sm:gap-3 group cursor-pointer">
+                    <span className="text-base sm:text-lg md:text-xl font-normal !text-white group-hover:!text-black transition-colors duration-150 whitespace-nowrap">(415) 854-8336</span>
+                </a>
+                <a href="mailto:hello@expandmarketingagency.com" className="flex items-center gap-2 sm:gap-3 group cursor-pointer">
                     <Mail className="!text-white group-hover:!text-black transition-colors duration-150 flex-shrink-0" size={18} />
-                    <span className="text-base sm:text-lg md:text-xl font-normal !text-white group-hover:!text-black transition-colors duration-150 whitespace-nowrap">hello@expandmarketing.com</span>
-                </div>
+                    <span className="text-base sm:text-lg md:text-xl font-normal !text-white group-hover:!text-black transition-colors duration-150 whitespace-nowrap">hello@expandmarketingagency.com</span>
+                </a>
                 <div className="flex gap-2 sm:gap-3 group cursor-pointer">
                     <MapPin className="!text-white group-hover:!text-black transition-colors duration-150 flex-shrink-0 mt-1" size={18} />
                     <span className="text-base sm:text-lg md:text-xl font-normal !text-white group-hover:!text-black transition-colors duration-150">Serving Home Services Nationwide</span>
@@ -123,13 +123,20 @@ const Footer = ({ backgroundColor = '#1d4ed8' }: FooterProps) => {
         </h5>
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 py-4 border-t border-white/20" id="here">
             <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-                <Image
-                  src="/assets/expandwhite.svg"
-                  alt="Expand Marketing"
-                  width={120}
-                  height={50}
-                  className="h-8 w-auto"
-                />
+                <span className="relative inline-flex h-8 flex-shrink-0 items-center">
+                    <Image
+                      src="/assets/Logo.svg"
+                      alt="Expand Marketing"
+                      width={1516}
+                      height={280}
+                      className="h-8 w-auto brightness-0 invert"
+                    />
+                    <span
+                      aria-hidden="true"
+                      className="absolute left-[39.27px] top-1/2 h-[13.25px] w-[13.25px] -translate-x-1/2 -translate-y-1/2 rounded-full"
+                      style={{ backgroundColor }}
+                    />
+                </span>
                 <span className="text-white/80 text-xs sm:text-sm ml-0 sm:ml-4">© Expand Marketing 2025</span>
                 <span className="text-white/60 text-xs sm:text-sm hidden sm:inline">|</span>
               

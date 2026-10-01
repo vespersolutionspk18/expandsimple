@@ -39,7 +39,7 @@ const webDesignServices: ServiceItem[] = [
   {
     id: 'portfolio-showcase',
     title: 'Project Portfolio & Before/After Galleries',
-    description: 'Show, don\'t just tell. We build stunning portfolio galleries that showcase your best work with professional before/after sliders, project details, cost ranges, and client testimonials. Homeowners want proof you can deliver. A well-organized portfolio builds instant credibility and helps them visualize their own project - accelerating the buying decision.',
+    description: 'Show, don\'t just tell. We build stunning portfolio galleries that showcase your best work with professional before/after sliders, project details, and client testimonials. Homeowners want proof you can deliver. A well-organized portfolio builds instant credibility and helps them visualize their own project - accelerating the buying decision.',
     buttonText: 'Showcase Your Work',
     buttonHref: '/contact?service=portfolio-showcase',
     imageSrc: '/assets/beforeafter.jpg',
@@ -63,7 +63,7 @@ const webDesignFAQs = [
   {
     id: 'faq-3',
     question: 'Do you provide hosting and maintenance?',
-    answer: 'Yes. All our websites include hosting on high-performance servers, SSL certificate (HTTPS security), automatic backups, security monitoring, software updates, and technical support. Hosting is $50-$150/month depending on site size and traffic. We handle all technical maintenance so you can focus on running your business, not managing a website.'
+    answer: 'Yes. All our websites include hosting on high-performance servers, SSL certificate (HTTPS security), automatic backups, security monitoring, software updates, and technical support. Hosting and maintenance needs depend on your site size and traffic, and we recommend a setup based on your requirements.'
   },
   {
     id: 'faq-4',
@@ -73,12 +73,12 @@ const webDesignFAQs = [
   {
     id: 'faq-5',
     question: 'What if I need changes after the website launches?',
-    answer: 'We provide training so you can make basic content updates yourself (blog posts, images, service descriptions). For design changes, new pages, or technical updates, we offer ongoing support packages starting at $150/month for minor monthly updates, or hourly rates for larger changes. Most clients opt for monthly support to keep content fresh and site optimized.'
+    answer: 'We provide training so you can make basic content updates yourself (blog posts, images, service descriptions). Ongoing support is available for routine updates, new pages, design changes, and technical work. We scope support around your site and the updates you need.'
   },
   {
     id: 'faq-6',
     question: 'How do you ensure the website generates leads?',
-    answer: 'Conversion-focused design is our specialty. We implement strategic CTAs above the fold, prominent click-to-call buttons on mobile, lead capture forms on every page, live chat for instant engagement, consultation schedulers, cost calculators, social proof (reviews, testimonials, awards), trust signals (licenses, certifications, guarantees), and clear service descriptions. We also implement heat mapping to track user behavior and continuously optimize conversion rates post-launch.'
+    answer: 'Conversion-focused design is our specialty. We implement strategic CTAs above the fold, prominent click-to-call buttons on mobile, lead capture forms on every page, live chat for instant engagement, consultation schedulers, social proof (reviews, testimonials, awards), trust signals (licenses, certifications, guarantees), and clear service descriptions. We also implement heat mapping to track user behavior and continuously optimize conversion rates post-launch.'
   }
 ]
 
@@ -109,7 +109,7 @@ const WebDesignPage = () => {
     {
       number: 3,
       title: 'Lead Capture & Conversion Tools',
-      description: 'Every page includes strategic forms, CTAs, click-to-call buttons, live chat, booking calendars, and cost calculators. We make it easy for visitors to take action and become leads.'
+      description: 'Every page includes strategic forms, CTAs, click-to-call buttons, live chat, and booking calendars. We make it easy for visitors to take action and become leads.'
     },
     {
       number: 4,

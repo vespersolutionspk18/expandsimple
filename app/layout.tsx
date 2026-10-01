@@ -13,7 +13,7 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "Expand Marketing",
+  title: "Expand Marketing Agency",
   description: "Full-service digital marketing agency for home service businesses. SEO, PPC, web design, and AI optimization for remodeling contractors.",
 };
 
@@ -28,11 +28,13 @@ export default function RootLayout({
         <MegaMenuProvider>
           <MegaMenuOverlay />
           {children}
-          <ChatBot
-            apiKey={chatbotConfig.apiKey}
-            systemInstructions={chatbotConfig.systemInstructions}
-            welcomeMessage={chatbotConfig.welcomeMessage}
-          />
+          {chatbotConfig.enabled && (
+            <ChatBot
+              apiKey={chatbotConfig.apiKey}
+              systemInstructions={chatbotConfig.systemInstructions}
+              welcomeMessage={chatbotConfig.welcomeMessage}
+            />
+          )}
         </MegaMenuProvider>
       </body>
     </html>

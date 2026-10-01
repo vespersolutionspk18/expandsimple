@@ -52,8 +52,8 @@ const ppcServices: ServiceItem[] = [
 const ppcFAQs = [
   {
     id: 'faq-1',
-    question: 'How much should I spend on Google Ads?',
-    answer: 'For most remodeling contractors, we recommend starting with $1,500-$3,000/month in ad spend plus management fees. This allows enough data to test keywords and optimize performance. In competitive markets, $5,000-$10,000/month is more effective. The key is your customer lifetime value - if one kitchen remodel brings in $50K, spending $500 to acquire that customer is excellent ROI.'
+    question: 'How do you plan a Google Ads budget?',
+    answer: 'Campaign budgets depend on your service area, competition, lead goals, and customer economics. We review those factors with you and recommend a plan that supports testing and ongoing optimization.'
   },
   {
     id: 'faq-2',
@@ -152,7 +152,7 @@ const PPCPage = () => {
             },
             {
               id: 2,
-              body: "We tried managing Google Ads ourselves and burned through $8K with barely any leads. Expand took over and within 60 days we were getting 40+ qualified leads per month at half the cost.",
+              body: "We tried managing Google Ads ourselves and spent heavily with barely any leads. Expand took over and within 60 days we were getting 40+ qualified leads per month at half the cost.",
               clientName: "Sarah Chen",
               clientCompany: "Chen Construction & Remodeling"
             },

@@ -2,6 +2,8 @@
 // This file contains the configuration for the website chatbot
 
 export const chatbotConfig = {
+  enabled: false,
+
   // Your Gemini API key
   // Get it from: https://aistudio.google.com/app/apikey
   apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY || '',
@@ -29,21 +31,21 @@ Our Services:
 
 Key Benefits:
 - Industry specialization: 100% focused on home services
-- Performance-based: ROI-driven approach with transparent reporting
+- Results-focused: ROI-driven approach with transparent reporting
 - Full-stack solution: From brand to booking, we handle everything
 - AI-powered: Leveraging cutting-edge AI for efficiency and results
 - Local dominance: Expertise in local SEO, Google LSA, and geo-targeted campaigns
 
 Your role:
 - Help home service contractors understand our marketing solutions
-- Provide information about our services, pricing, and how we help them win high-value projects
+- Explain our services and how we help contractors win high-value projects. When asked about pricing, direct visitors to contact our team for a tailored proposal; do not provide prices, rates, or numeric ranges.
 - Be friendly, professional, and concise in your responses
-- When users show interest, suggest scheduling a free marketing audit or strategy call
+- When users show interest, suggest contacting our team to discuss their goals and next steps
 - Answer questions about how Expand Marketing can fill their pipeline with high-value remodeling projects
 
 Contact Information:
 - Schedule a consultation through our contact form
-- Email: hello@expandmarketing.com
+- Email: hello@expandmarketingagency.com
 - Nationwide Service
 
 Guidelines:

@@ -91,7 +91,7 @@ const ServicesPage = () => {
     {
       id: 'branding',
       title: 'Branding & Identity',
-      description: 'Stand out from the sea of generic contractors with a memorable brand that commands premium prices. We develop brand identities that resonate with high-value homeowners - from logo design to brand messaging, color palettes to brand guidelines.',
+      description: 'Stand out from the sea of generic contractors with a memorable brand that signals quality and builds trust. We develop brand identities that resonate with homeowners - from logo design to brand messaging, color palettes to brand guidelines.',
       buttonText: 'Build Your Brand',
       buttonHref: '/services/branding',
       imageSrc: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2800&auto=format&fit=crop',

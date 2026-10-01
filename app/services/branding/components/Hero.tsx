@@ -9,7 +9,7 @@ const Hero = () => {
             Branding
         </h1>
         <h5 className="text-base sm:text-lg md:text-xl lg:text-2xl tracking-tighter leading-tight text-black/90 w-full lg:w-[50%]">
-Stand out and be remembered in your market. Professional branding that makes you the go-to choice for high-value projects. From logo design to complete brand identity systems, we help contractors charge premium prices, build customer loyalty, and dominate their local market.
+Stand out and be remembered in your market. Professional branding that makes you the go-to choice for high-value projects. From logo design to complete brand identity systems, we help contractors attract ideal customers, build loyalty, and strengthen their presence in the local market.
         </h5>
       </div>
       <div className="rounded-2xl sm:rounded-3xl overflow-hidden relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">

@@ -16,7 +16,7 @@ const brandingServices: ServiceItem[] = [
   {
     id: 'brand-identity',
     title: 'Complete Brand Identity Design',
-    description: 'Your logo, colors, typography, and visual style define how customers perceive you. We create cohesive brand identities that communicate professionalism, quality, and trust. Includes logo design (primary and secondary marks), color palette, typography system, brand style guide, business cards, letterhead, and all the assets you need. A strong visual identity helps you charge 20-30% more than competitors with generic branding.',
+    description: 'Your logo, colors, typography, and visual style define how customers perceive you. We create cohesive brand identities that communicate professionalism, quality, and trust. Includes logo design (primary and secondary marks), color palette, typography system, brand style guide, business cards, letterhead, and all the assets you need. A strong visual identity helps you stand out from competitors with generic branding.',
     buttonText: 'Build Your Brand',
     buttonHref: '/contact?service=brand-identity',
     imageSrc: '/assets/brandingidentity.webp',
@@ -39,7 +39,7 @@ const brandingServices: ServiceItem[] = [
   {
     id: 'brand-strategy',
     title: 'Brand Strategy & Positioning',
-    description: 'What makes you different? Why should homeowners choose you over competitors? We develop brand positioning that clearly communicates your unique value. This includes target audience definition, competitive differentiation, value proposition development, brand messaging framework, tagline creation, and brand voice guidelines. Strategic positioning helps you attract ideal customers who value quality over price - the ones willing to pay premium rates for premium work.',
+    description: 'What makes you different? Why should homeowners choose you over competitors? We develop brand positioning that clearly communicates your unique value. This includes target audience definition, competitive differentiation, value proposition development, brand messaging framework, tagline creation, and brand voice guidelines. Strategic positioning helps you attract ideal customers who value quality and lasting workmanship.',
     buttonText: 'Define Your Position',
     buttonHref: '/contact?service=brand-strategy',
     imageSrc: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop',
@@ -53,7 +53,7 @@ const brandingFAQs = [
   {
     id: 'faq-1',
     question: 'Why does branding matter for contractors?',
-    answer: 'Branding is the difference between being seen as a commodity (lowest price wins) versus a premium service provider. Strong branding builds trust before you meet prospects, justifies higher prices, increases referrals, attracts better employees, and creates customer loyalty. Homeowners hiring for $50K+ remodeling projects want to work with established, professional companies - branding signals that you\'re the real deal.'
+    answer: 'Branding helps distinguish your business from generic competitors and builds trust before you meet prospects. Strong branding can increase referrals, attract employees, and create customer loyalty. Homeowners planning substantial remodeling work look for established, professional companies - branding signals that you\'re the real deal.'
   },
   {
     id: 'faq-2',
@@ -77,8 +77,8 @@ const brandingFAQs = [
   },
   {
     id: 'faq-6',
-    question: 'What\'s the ROI of professional branding?',
-    answer: 'Professional branding allows you to charge 20-30% higher prices than competitors with weak branding. It increases close rates (trust factor), referral rates (memorable and recommend-able), employee retention (pride in working for professional company), and customer lifetime value (loyalty). Many clients report their branding investment pays for itself within 3-6 months through higher-value projects and increased referrals.'
+    question: 'How can professional branding support business growth?',
+    answer: 'Professional branding can strengthen trust, improve close and referral rates, attract employees, and build customer loyalty. A consistent identity helps your business stand out and build stronger relationships with the customers you want to reach.'
   }
 ]
 
@@ -146,7 +146,7 @@ const BrandingPage = () => {
           testimonials={[
             {
               id: 1,
-              body: "The rebrand was transformational. New logo, vehicle wraps, website, everything. We immediately started attracting higher-end clients. Our average project value went from $35K to $62K in 6 months. Premium branding = premium customers.",
+              body: "The rebrand was transformational. New logo, vehicle wraps, website, everything. We immediately started attracting higher-end clients and more of the projects we wanted. Premium branding helped us stand out to the right customers.",
               clientName: "Sarah Chen",
               clientCompany: "Chen Construction & Remodeling"
             },
@@ -186,7 +186,7 @@ const BrandingPage = () => {
         />
       </div>
       <div id="contact">
-        <LeadChange text="Build a Brand That Commands Premium Prices"/>
+        <LeadChange text="Build a Brand That Stands Out"/>
       </div>
       <Footer />
       </main>

@@ -30,10 +30,10 @@ export default function LoginPage() {
           <div className="flex flex-col items-center mb-8">
             <div className="mb-4">
               <Image
-                src="/assets/expandmain.svg"
+                src="/assets/Logo.svg"
                 alt="Expand Marketing"
-                width={150}
-                height={62}
+                width={1516}
+                height={280}
                 className="h-12 w-auto"
               />
             </div>

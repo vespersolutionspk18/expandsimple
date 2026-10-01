@@ -67,8 +67,8 @@ const seoFAQs = [
   },
   {
     id: 'faq-4',
-    question: 'How much does SEO cost for home service businesses?',
-    answer: 'Our SEO packages range from $1,500-$2,500/month for local SEO essentials, $3,000-$5,000/month for competitive market domination, and $7,500+/month for enterprise multi-location businesses. Pricing depends on your market competition, current website status, number of service areas, and growth goals. We provide custom quotes after a free audit.'
+    question: 'How is an SEO plan tailored to my business?',
+    answer: 'The right SEO strategy depends on your market competition, website, service areas, and growth goals. We review those factors with you and recommend a plan focused on improving your visibility and lead flow.'
   },
   {
     id: 'faq-5',

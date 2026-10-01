@@ -16,7 +16,7 @@ const crmServices: ServiceItem[] = [
   {
     id: 'open-source-implementation',
     title: 'Open Source CRM Implementation',
-    description: 'Stop paying $50-$200 per user per month for proprietary CRM software. We implement powerful open source CRM platforms like SuiteCRM, Odoo, EspoCRM, and Vtiger - customized specifically for home service contractors. You own the software, own your data, and pay zero licensing fees. We handle installation, configuration, customization, and training. Get enterprise-level CRM functionality at a fraction of the cost, with complete control and flexibility.',
+    description: 'We implement open source CRM platforms like SuiteCRM, Odoo, EspoCRM, and Vtiger, customized specifically for home service contractors. You retain control of your software and data, with flexible hosting and no vendor lock-in. We handle installation, configuration, customization, and training around your workflows.',
     buttonText: 'Get Open Source CRM',
     buttonHref: '/contact?service=open-source-crm',
     imageSrc: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2670&auto=format&fit=crop',
@@ -53,7 +53,7 @@ const crmFAQs = [
   {
     id: 'faq-1',
     question: 'What is open source CRM and why is it better?',
-    answer: 'Open source CRM means the software code is freely available and customizable. Benefits: No per-user licensing fees (save $50-$200/user/month), complete customization freedom, no vendor lock-in, own your data fully, self-hosted option for maximum control, and active community support. You pay once for setup and customization, not forever in subscription fees. For a 5-person team, that\'s $3,000-$12,000/year saved compared to proprietary platforms.'
+    answer: 'Open source CRM gives you access to customizable software with greater control over your workflows and data. Benefits include flexibility, no vendor lock-in, self-hosting options, and active community support. We assess your requirements and recommend a platform and implementation approach that fits your team.'
   },
   {
     id: 'faq-2',
@@ -63,12 +63,12 @@ const crmFAQs = [
   {
     id: 'faq-3',
     question: 'Is open source CRM as good as Salesforce or HubSpot?',
-    answer: 'For contractors, yes - often better. Salesforce and HubSpot are built for generic B2B sales and cost $1,200-$4,800+ per year per user. Open source CRMs can be customized specifically for contractor workflows (estimates, projects, seasonal follow-ups) without the bloat. You get exactly what you need, nothing you don\'t. The only "disadvantage" is you need expert setup (that\'s where we come in) rather than plug-and-play, but the tradeoff is worth it.'
+    answer: 'For contractors, open source CRMs can be a strong fit. Unlike general-purpose platforms, they can be customized for contractor workflows such as estimates, projects, and seasonal follow-ups. We help you choose and configure a system around the way your team works.'
   },
   {
     id: 'faq-4',
     question: 'Do you provide ongoing CRM support and training?',
-    answer: 'Yes. Initial implementation includes full team training and documentation. Ongoing support packages start at $500/month for monthly CRM audits, optimization, troubleshooting, and additional training as you hire. We also offer on-demand hourly support ($150/hr) for occasional needs. You\'re never stuck - we provide responsive support via email, phone, and screen sharing.'
+    answer: 'Yes. Initial implementation includes full team training and documentation. Ongoing support is available for CRM audits, optimization, troubleshooting, and additional training as your team grows. Contact us to discuss the support that fits your system and needs.'
   },
   {
     id: 'faq-5',
@@ -98,8 +98,8 @@ const CRMConsultancyPage = () => {
   const keyFeatures = [
     {
       number: 1,
-      title: 'Zero Licensing Fees, Full Ownership',
-      description: 'Open source CRMs eliminate per-user subscription costs. You own the software and your data completely. No vendor lock-in, no price increases, no forced upgrades. A 10-person team saves $6,000-$24,000 annually compared to proprietary platforms.'
+      title: 'Flexible Open Source, Full Ownership',
+      description: 'You maintain control of your CRM and data, with the flexibility to customize workflows as your business changes. Avoid vendor lock-in and choose an implementation that fits your team.'
     },
     {
       number: 2,
@@ -114,7 +114,7 @@ const CRMConsultancyPage = () => {
     {
       number: 4,
       title: 'Self-Hosted or Cloud Deployment',
-      description: 'You choose: self-hosted on your own servers (maximum control and privacy) or cloud-hosted on affordable platforms like DigitalOcean, Linode, or AWS ($10-$50/month total, not per user). We handle all technical setup and maintenance.'
+      description: 'You choose between self-hosting on your own servers for maximum control or cloud hosting through platforms like DigitalOcean, Linode, or AWS. We handle technical setup and maintenance based on your requirements.'
     }
   ]
 
@@ -146,7 +146,7 @@ const CRMConsultancyPage = () => {
           testimonials={[
             {
               id: 1,
-              body: "We were paying $4,800/year for a CRM we barely used because it was too complicated. Expand implemented SuiteCRM customized for our remodeling process. Zero licensing fees, perfect for our workflow. Saved $4,800/year and actually use it daily.",
+              body: "We were stuck with a CRM we barely used because it was too complicated. Expand implemented SuiteCRM around our remodeling process. The workflow is simpler, fits our team, and we actually use it every day.",
               clientName: "Sarah Chen",
               clientCompany: "Chen Construction & Remodeling"
             },
@@ -170,7 +170,7 @@ const CRMConsultancyPage = () => {
             },
             {
               id: 5,
-              body: "Open source was the right call. We own it, we control it, we customize it as we grow. No forced upgrades, no surprise price increases, no vendor telling us what we can and can't do. Total control at a fraction of the cost.",
+              body: "Open source was the right call. We own it, control it, and customize it as we grow. There is no vendor lock-in, and the system works around our business instead of forcing us into a generic process.",
               clientName: "Jennifer Santos",
               clientCompany: "Santos Kitchen & Bath"
             }

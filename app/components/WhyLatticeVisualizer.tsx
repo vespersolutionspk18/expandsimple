@@ -61,7 +61,7 @@ const WhyLatticeVisualizer = ({ cards }: WhyLatticeProps) => {
             Why Expand?
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            No Subscription or Membership Fee, One Flat Rate
+            Solutions Tailored to Your Business Goals
           </p>
         </div>
 

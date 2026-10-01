@@ -174,7 +174,7 @@ const CaseStudies = () => {
             <div className="hidden-content">
               <p className="text-white/90 font-sans tracking-tight py-6">
                 Contractor scaled from $500K to $2.5M annually using our 
-                complete suite. Free website ranks #1 locally.
+                complete suite. Website ranks #1 locally.
               </p>
               <SimpleButton text="VIEW PROJECT" route="/case-studies" />
             </div>

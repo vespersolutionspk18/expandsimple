@@ -161,12 +161,16 @@ const Form = () => {
               required
             >
               <option value="">Please select an option</option>
-              <option value="crm">CRM Solutions</option>
-              <option value="website">Website Development</option>
-              <option value="3d-rendering">3D Rendering Tools</option>
-              <option value="ai-designer">AI Designer</option>
-              <option value="full-package">Complete Package</option>
-              <option value="other">Other</option>
+              <option value="seo">Search Engine Optimization (SEO)</option>
+              <option value="ppc">PPC Advertising</option>
+              <option value="adwords">Google AdWords Management</option>
+              <option value="sem">Search Engine Marketing (SEM)</option>
+              <option value="aieo">AI Engine Optimization (AIEO)</option>
+              <option value="web-design">Web Design &amp; Development</option>
+              <option value="content-creation">Content Creation</option>
+              <option value="branding">Branding &amp; Identity</option>
+              <option value="ai-consultancy">AI Consultancy &amp; Automation</option>
+              <option value="crm">CRM Consultancy &amp; Optimization</option>
             </select>
           </div>
 

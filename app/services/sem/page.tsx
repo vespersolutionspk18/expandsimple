@@ -72,8 +72,8 @@ const semFAQs = [
   },
   {
     id: 'faq-5',
-    question: 'How much should I budget for an integrated SEM strategy?',
-    answer: 'For comprehensive SEM (SEO + PPC combined), we typically recommend $5,000-$10,000/month total. This includes $2,500-$4,000 for SEO services, $1,500-$3,000 in PPC ad spend, and $1,000-$3,000 in PPC management. The exact split depends on your market, competition, and goals. We can start with one channel and scale up as you see ROI.'
+    question: 'How do you plan an integrated SEM strategy?',
+    answer: 'The right mix of SEO and paid search depends on your market, competition, current visibility, and growth goals. We assess those factors with you, then recommend a channel plan and adjust it as performance data comes in.'
   },
   {
     id: 'faq-6',

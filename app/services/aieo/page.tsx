@@ -78,7 +78,7 @@ const aieoFAQs = [
   {
     id: 'faq-6',
     question: 'Can I do AIEO without traditional SEO?',
-    answer: 'Not recommended. AIEO works best when combined with traditional SEO because AI systems often pull information from websites that already rank well and have strong authority signals. We recommend AIEO as an add-on to existing SEO efforts. The synergy between the two creates stronger results than either alone. Pricing starts at $500-$1,000/month additional to your SEO package.'
+    answer: 'Not recommended. AIEO works best when combined with traditional SEO because AI systems often pull information from websites that already rank well and have strong authority signals. We recommend integrating AIEO with existing SEO efforts so both strategies support your visibility and authority.'
   }
 ]
 

@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import { Users, DollarSign, Database, Globe, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const PurpleBoxSection = () => {
+  const router = useRouter();
   const [isHoveredLearn, setIsHoveredLearn] = useState(false);
   const [isHoveredDemo, setIsHoveredDemo] = useState(false);
   const [isHoveredLearn2, setIsHoveredLearn2] = useState(false);
@@ -83,6 +85,7 @@ const PurpleBoxSection = () => {
                 transition={{ duration: 0.1, ease: 'easeOut' }}
                 onHoverStart={() => setIsHoveredLearn(true)}
                 onHoverEnd={() => setIsHoveredLearn(false)}
+                onClick={() => router.push('/services/seo')}
                 className="px-8 py-3 bg-[#1d4ed8] text-white hover:bg-[#1d4ed8]/90 font-semibold inline-flex items-center justify-center overflow-hidden relative cursor-pointer"
                 style={{ fontFamily: 'var(--font-figtree)', fontWeight: 600 }}
               >
@@ -113,6 +116,7 @@ const PurpleBoxSection = () => {
                 transition={{ duration: 0.1, ease: 'easeOut' }}
                 onHoverStart={() => setIsHoveredDemo(true)}
                 onHoverEnd={() => setIsHoveredDemo(false)}
+                onClick={() => router.push('/contact')}
                 className="px-8 py-3 bg-gray-100 text-black hover:bg-gray-200 font-semibold inline-flex items-center justify-center overflow-hidden relative cursor-pointer"
                 style={{ fontFamily: 'var(--font-figtree)', fontWeight: 600 }}
               >
@@ -250,6 +254,7 @@ const PurpleBoxSection = () => {
                 transition={{ duration: 0.1, ease: 'easeOut' }}
                 onHoverStart={() => setIsHoveredLearn2(true)}
                 onHoverEnd={() => setIsHoveredLearn2(false)}
+                onClick={() => router.push('/services/ai-consultancy')}
                 className="px-8 py-3 bg-[#1d4ed8] text-white hover:bg-[#1d4ed8]/90 font-semibold inline-flex items-center justify-center overflow-hidden relative cursor-pointer"
                 style={{ fontFamily: 'var(--font-figtree)', fontWeight: 600 }}
               >
@@ -280,6 +285,7 @@ const PurpleBoxSection = () => {
                 transition={{ duration: 0.1, ease: 'easeOut' }}
                 onHoverStart={() => setIsHoveredDemo2(true)}
                 onHoverEnd={() => setIsHoveredDemo2(false)}
+                onClick={() => router.push('/contact')}
                 className="px-8 py-3 bg-gray-100 text-black hover:bg-gray-200 font-semibold inline-flex items-center justify-center overflow-hidden relative cursor-pointer"
                 style={{ fontFamily: 'var(--font-figtree)', fontWeight: 600 }}
               >

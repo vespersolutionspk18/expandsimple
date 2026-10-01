@@ -67,8 +67,8 @@ const aiFAQs = [
   },
   {
     id: 'faq-4',
-    question: 'Is AI expensive to implement?',
-    answer: 'Not compared to the cost of manual processes or missed leads. AI Quick Wins package ($2,500-$5,000 one-time) implements 1-2 essential tools like chatbot and review automation. AI Transformation ($10,000-$25,000) is comprehensive integration across marketing and operations. Ongoing costs are minimal ($100-$500/month for software). Most clients see ROI within 2-4 months through time savings and captured leads they would have missed.'
+    question: 'How is an AI implementation scoped?',
+    answer: 'The right approach depends on your workflows, tools, integrations, and business goals. We assess your operations with you, identify the most useful opportunities, and recommend an implementation plan tailored to your needs.'
   },
   {
     id: 'faq-5',
@@ -78,7 +78,7 @@ const aiFAQs = [
   {
     id: 'faq-6',
     question: 'What if the AI gives wrong information?',
-    answer: 'We train AI systems on YOUR specific information - services, pricing ranges, service areas, processes, FAQs. The AI only answers questions it\'s been trained on. For complex or unique questions, it collects contact info and notifies your team for personal follow-up. We continuously monitor conversations, identify gaps, and refine training. AI gets smarter over time and error rates drop to near-zero within 30-60 days.'
+    answer: 'We train AI systems on your specific information - services, service areas, processes, and FAQs. The AI only answers questions it\'s been trained on. For complex or unique questions, it collects contact info and notifies your team for personal follow-up. We continuously monitor conversations, identify gaps, and refine training. AI gets smarter over time and error rates drop to near-zero within 30-60 days.'
   }
 ]
 
@@ -114,7 +114,7 @@ const AIConsultancyPage = () => {
     {
       number: 4,
       title: 'Contractor-Specific AI Training',
-      description: 'We customize AI for your business - your services, pricing philosophy, service area, process, and brand voice. The AI sounds like your team, not a generic robot. It understands home service industry terminology and homeowner concerns.'
+      description: 'We customize AI for your business - your services, service area, processes, and brand voice. The AI sounds like your team, not a generic robot. It understands home service industry terminology and homeowner concerns.'
     }
   ]
 

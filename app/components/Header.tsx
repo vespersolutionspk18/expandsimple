@@ -214,10 +214,10 @@ const Header = ({ enableScrollEffects = false, buttonText = 'Get Free Ranking Re
             {/* Logo */}
             <Link href="/" className="flex-shrink-0 flex items-center gap-2">
               <Image
-                src="/assets/expandmain.svg"
+                src="/assets/Logo.svg"
                 alt="Expand Marketing"
-                width={120}
-                height={50}
+                width={1516}
+                height={280}
                 className="h-8 w-auto"
               />
             </Link>

@@ -9,7 +9,7 @@ const Hero = () => {
             CRM Consultancy
         </h1>
         <h5 className="text-base sm:text-lg md:text-xl lg:text-2xl tracking-tighter leading-tight text-black/90 w-full lg:w-[50%]">
-Never lose a lead or miss a follow-up again. Open source CRM implementation that gives you full control without the enterprise price tag. Custom-built for contractors, no vendor lock-in, no per-user fees. Own your data, automate your pipeline, and scale without breaking the bank.
+Never lose a lead or miss a follow-up again. Open source CRM implementation gives you control and flexible workflows built for contractors. Avoid vendor lock-in, own your data, and automate your pipeline as your business grows.
         </h5>
       </div>
       <div className="rounded-2xl sm:rounded-3xl overflow-hidden relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">

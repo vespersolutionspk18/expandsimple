@@ -73,7 +73,7 @@ const adwordsFAQs = [
   {
     id: 'faq-5',
     question: 'What ad extensions do you use?',
-    answer: 'We implement all relevant extensions: sitelinks (link to specific services), callouts (24/7 availability, free estimates), structured snippets (services offered), call extensions (click-to-call), location extensions (show your address), and price extensions (transparent pricing). Extensions increase ad size, improve click-through rate, and provide more information to potential customers.'
+    answer: 'We implement relevant ad assets such as sitelinks, callouts, structured snippets, call extensions, and location extensions. These increase ad visibility and provide useful information that helps potential customers take action.'
   },
   {
     id: 'faq-6',
@@ -104,7 +104,7 @@ const AdWordsPage = () => {
     {
       number: 2,
       title: 'Advanced Ad Extensions',
-      description: 'We implement all available extensions - sitelinks, callouts, structured snippets, call extensions, location extensions, and price extensions - to maximize your ad real estate and CTR.'
+      description: 'We implement relevant ad assets - sitelinks, callouts, structured snippets, call extensions, and location extensions - to maximize your ad visibility and click-through rate.'
     },
     {
       number: 3,
@@ -170,7 +170,7 @@ const AdWordsPage = () => {
             },
             {
               id: 5,
-              body: "Having a dedicated Google Ads specialist who actually answers the phone is incredible. No ticket systems, no waiting days for responses. They manage our $15K/month budget like it's their own money.",
+              body: "Having a dedicated Google Ads specialist who actually answers the phone is incredible. No ticket systems, no waiting days for responses. They manage our ad budget like it's their own money.",
               clientName: "Jennifer Santos",
               clientCompany: "Santos Kitchen & Bath"
             }
